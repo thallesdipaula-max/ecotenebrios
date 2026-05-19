@@ -113,3 +113,71 @@ Quando o usuário pedir skill nova:
 4. Se a skill precisar de arquivos de apoio (templates, exemplos),
    criar dentro da pasta da skill
 5. Seguir o fluxo da skill-creator nativa do Claude Code
+
+---
+
+# Ecotenébrios — Regras operacionais
+
+## O que é esse workspace
+
+Operação da Ecotenébrios. Comercialização de alimentação natural para pets exóticos (minhocas, tenébrios, larvas), produção artesanal, 100% de responsabilidade da Raíssa (gestora/operadora solo).
+
+**Estrutura de pastas:**
+- `_memoria/` — contexto da empresa, preferências de comunicação, foco atual
+- `identidade/` — marca visual (cores, logo, design-guide)
+- `marketing/` — conteúdo Instagram, carrosséis, legendas, calendário editorial
+- `comercial/` — propostas, materiais de venda, lista de clientes
+- `operacoes/` — processos (produção, estoque, logística, atendimento)
+- `financeiro/` — relatórios, fluxo de caixa, análise de vendas
+- `dados/` — arquivos para análise (vendas, engajamento, feedback)
+- `saidas/` — documentos pontuais, relatórios, exports
+- `projetos/` — iniciativas que cruzam setores
+
+## Sobre a empresa
+
+**Ecotenébrios** é uma empresa de comércio eletrônico especializada em alimentação natural (viva e desidratada) para pets exóticos. Atuamos no segmento de nutrição premium para animais, atendendo donos que se preocupam com qualidade. Raíssa é responsável por toda a operação: produção artesanal, venda, atendimento, conteúdo.
+
+## Foco da operação
+
+**Principal gargalo:** Visibilidade (seguidores que engajam) e frete (caro, reduz conversão).
+
+**Primeira alavanca:** Aumentar alcance e autoridade no Instagram através de conteúdo consistente, planejado e educativo. Automatizar o planejamento semanal (candidata a skill `/mapear-rotinas` depois).
+
+**Próximas frentes:** Explorar anúncios pagos, otimizar SEO, parcerias com influenciadores de pets exóticos.
+
+## Entregas frequentes
+
+- **Conteúdo Instagram:** Carrosséis educativos, reels, stories (semanal)
+- **Atendimento:** WhatsApp, respostas de dúvidas sobre produtos
+- **Relatórios:** Vendas semanais, engajamento, estoque (monitoramento)
+
+## Tom de voz
+
+**Conversacional, educativo, descontraído mas não informal.** Faz perguntas pra engajar. Explica os benefícios dos produtos (nutrição, cuidado) sem parecer vendedor. Usa emojis naturalmente. Linguagem normal, equilibrada — evita formalismo excessivo e gírias.
+
+**Referência:** Legendas reais do Instagram (@ecotenebrio.tenebrios) que educam enquanto vendem.
+
+## Regras de organização
+
+- Conteúdo Instagram: salvar em `marketing/instagram/` (carrosséis, briefings, calendário)
+- Atendimento/FAQ: documentar em `operacoes/faq.md`
+- Análises de vendas/engajamento: `dados/`
+- Relatórios periódicos: `financeiro/relatorios/`
+- Ideias para skills: acompanhar em `estrategia.md` (tarefas repetidas)
+
+## Ferramentas conectadas
+
+- [x] Instagram (@ecotenebrio.tenebrios) — principal canal
+- [x] WhatsApp — atendimento direto
+- [ ] Google Ads — para explorar depois
+- [ ] Meta Ads — para explorar depois
+- [ ] Google Analytics — se tiver site
+
+## Skills criadas
+
+- **✅ `/planejar-instagram`** — gera planejamento semanal de 5-7 posts educativos (automatiza tarefa repetitiva)
+
+## Próximas skills a criar
+
+- Analisar dados de vendas e engajamento automaticamente
+- Gerar carrosséis educativos com templates
