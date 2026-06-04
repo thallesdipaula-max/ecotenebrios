@@ -67,9 +67,7 @@
     }
     </script>
 
-    <!-- Meta Pixel Code (Remarketing) - Preparado para Ativação -->
-    <!-- Assim que criar o seu pixel, substitua a string 'SEU_PIXEL_ID_AQUI' pelo número do seu pixel e remova os comentários -->
-    <!--
+    <!-- Meta Pixel Code (Remarketing) - ATIVADO -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -79,13 +77,13 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'SEU_PIXEL_ID_AQUI');
+    fbq('init', '1006621321781390');
     fbq('track', 'PageView');
     </script>
     <noscript>
-      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1006621321781390&ev=PageView&noscript=1"/>
     </noscript>
-    -->
+
 
 </head>
 <body>
@@ -388,6 +386,23 @@ window.addEventListener('scroll', function() {
         whatsappBtn.classList.remove('visible');
     }
 });
+
+// Meta Pixel tracking para cliques no WhatsApp (Leads)
+document.addEventListener('DOMContentLoaded', function() {
+    const trackingLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]');
+    trackingLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    content_name: 'Contato WhatsApp',
+                    value: 0.00,
+                    currency: 'BRL'
+                });
+            }
+        });
+    });
+});
 </script>
+
 </body>
 </html>
