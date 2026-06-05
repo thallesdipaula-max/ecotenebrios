@@ -196,11 +196,11 @@
                     </div>
                 </div>
                 
-                <a href="https://wa.me/5515981098418?text=Olá!%20Quero%20aproveitar%20a%20oferta%20do%20Kit%20Premium%20de%20Tenébrios%20Vivos%20por%20R$%2049,90%20com%20Frete%20Grátis." class="btn btn-primary btn-offer" target="_blank">
-                    <img src="./assets/images/whatsapp-icon.png" alt="WhatsApp" class="btn-icon-img">
-                    Quero Garantir Meu Kit com Frete Grátis
+                <a href="https://mpago.li/27M3xJX" class="btn btn-primary btn-offer btn-checkout" target="_blank">
+                    <span class="btn-icon">🛒</span>
+                    Garantir Meu Kit com Frete Grátis
                 </a>
-                <p class="offer-fineprint">Oferta por tempo limitado. Consulte a disponibilidade de entrega segura para sua região.</p>
+                <p class="offer-fineprint">Oferta por tempo limitado. O pagamento é processado de forma 100% segura pelo Mercado Pago. Após o pagamento, entraremos em contato via WhatsApp para confirmar o endereço de entrega.</p>
             </div>
         </section>
     </main>
@@ -387,10 +387,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Meta Pixel tracking para cliques no WhatsApp (Leads)
+// Meta Pixel tracking para cliques no WhatsApp (Leads) e Mercado Pago (Checkouts)
 document.addEventListener('DOMContentLoaded', function() {
-    const trackingLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]');
-    trackingLinks.forEach(function(link) {
+    // Rastreamento dos cliques do WhatsApp (Leads)
+    const whatsappLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]');
+    whatsappLinks.forEach(function(link) {
         link.addEventListener('click', function() {
             if (typeof fbq !== 'undefined') {
                 fbq('track', 'Lead', {
@@ -401,6 +402,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Rastreamento do clique no link do Mercado Pago (Início de Checkout)
+    const checkoutLink = document.querySelector('.btn-checkout');
+    if (checkoutLink) {
+        checkoutLink.addEventListener('click', function() {
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'InitiateCheckout', {
+                    content_name: 'Kit Premium Ecotenébrios',
+                    content_category: 'Produtos',
+                    value: 49.90,
+                    currency: 'BRL'
+                });
+            }
+        });
+    }
 });
 </script>
 
