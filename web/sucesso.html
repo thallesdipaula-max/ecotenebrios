@@ -41,15 +41,16 @@
             justify-content: center;
             min-height: 80vh;
             padding: var(--spacing-xl) var(--spacing-sm);
-            text-align: center;
         }
         .success-container {
             max-width: 600px;
+            width: 100%;
             background: white;
             padding: var(--spacing-xl) var(--spacing-md);
             border-radius: 20px;
             border: 1px solid var(--color-border);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
         }
         .success-icon {
             font-size: 60px;
@@ -72,6 +73,7 @@
             border-radius: 12px;
             padding: var(--spacing-md);
             margin-bottom: var(--spacing-lg);
+            text-align: left;
         }
         .address-box h3 {
             color: var(--color-primary-dark);
@@ -84,6 +86,54 @@
             color: #666;
             margin-bottom: 0;
         }
+        
+        /* Estilos do Formulário de Endereço */
+        .address-form {
+            text-align: left;
+            margin-bottom: var(--spacing-lg);
+            background: #fafaf9;
+            padding: var(--spacing-md);
+            border-radius: 12px;
+            border: 1px solid var(--color-border);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 15px;
+        }
+        @media (max-width: 480px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+        }
+        .address-form label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .address-form input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: var(--font-sans);
+            color: var(--color-text);
+            transition: var(--transition);
+        }
+        .address-form input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(107, 142, 113, 0.1);
+        }
+        
         .btn-success-whatsapp {
             display: inline-flex;
             align-items: center;
@@ -137,13 +187,55 @@
             
             <div class="address-box">
                 <h3>⚠️ Passo Final Obrigatório</h3>
-                <p>Como o pagamento foi simplificado, precisamos que você nos envie o seu endereço completo de entrega pelo WhatsApp para podermos postar o seu produto.</p>
+                <p>Por favor, preencha os dados do seu endereço de entrega abaixo. Ao clicar em enviar, os dados serão formatados automaticamente e abriremos o seu WhatsApp para você nos enviar a mensagem em 1 clique.</p>
             </div>
 
-            <a href="https://wa.me/5515981098418?text=Olá!%20Acabei%20de%20comprar%20o%20Kit%20Premium%20Ecotenébrios%20pelo%20Mercado%20Pago.%20Aqui%20está%20meu%20endereço%20para%20envio:" class="btn-success-whatsapp" target="_blank">
-                <img src="./assets/images/whatsapp-icon.png" alt="WhatsApp" class="btn-icon-wa">
-                Enviar Endereço de Entrega no WhatsApp
-            </a>
+            <!-- Formulário Interativo de Endereço -->
+            <form id="addressForm" class="address-form" onsubmit="sendAddress(event)">
+                <div class="form-group">
+                    <label for="fullName">Nome Completo</label>
+                    <input type="text" id="fullName" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="street">Rua / Logradouro</label>
+                        <input type="text" id="street" placeholder="Nome da rua, avenida..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Número / Apto</label>
+                        <input type="text" id="number" placeholder="Nº, apto, bloco..." required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="neighborhood">Bairro</label>
+                        <input type="text" id="neighborhood" placeholder="Nome do bairro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" placeholder="00000-000" maxlength="9" oninput="formatCEP(this)" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">Cidade</label>
+                        <input type="text" id="city" placeholder="Sua cidade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">Estado (UF)</label>
+                        <input type="text" id="state" placeholder="SP, RJ, MG..." maxlength="2" style="text-transform: uppercase;" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="reference">Ponto de Referência</label>
+                    <input type="text" id="reference" placeholder="Ex: Próximo à padaria, casa verde...">
+                </div>
+
+                <button type="submit" class="btn-success-whatsapp">
+                    <img src="./assets/images/whatsapp-icon.png" alt="WhatsApp" class="btn-icon-wa">
+                    Enviar Endereço no WhatsApp
+                </button>
+            </form>
 
             <a href="index.html" class="back-home">← Voltar para a página inicial</a>
         </div>
@@ -155,5 +247,45 @@
         </div>
     </footer>
 
+    <script>
+    // Formatação de CEP em tempo real (00000-000)
+    function formatCEP(input) {
+        let value = input.value.replace(/\D/g, "");
+        if (value.length > 5) {
+            value = value.substring(0, 5) + "-" + value.substring(5, 8);
+        }
+        input.value = value;
+    }
+
+    // Processar formulário e abrir o WhatsApp com texto formatado
+    function sendAddress(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('fullName').value.trim();
+        const street = document.getElementById('street').value.trim();
+        const number = document.getElementById('number').value.trim();
+        const neighborhood = document.getElementById('neighborhood').value.trim();
+        const cep = document.getElementById('cep').value.trim();
+        const city = document.getElementById('city').value.trim();
+        const state = document.getElementById('state').value.toUpperCase().trim();
+        const reference = document.getElementById('reference').value.trim();
+        
+        let message = `Olá Raíssa! Acabei de adquirir o Kit Premium Ecotenébrios e aqui estão os dados para a entrega:\n\n` +
+                      `👤 *Nome:* ${name}\n` +
+                      `📍 *Endereço:* ${street}, Nº ${number}\n` +
+                      `🏡 *Bairro:* ${neighborhood}\n` +
+                      `🏙️ *Cidade:* ${city} - ${state}\n` +
+                      `📬 *CEP:* ${cep}`;
+                      
+        if (reference) {
+            message += `\n🔍 *Ponto de Referência:* ${reference}`;
+        }
+        
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/5515981098418?text=${encodedMessage}`;
+        
+        window.open(whatsappUrl, '_blank');
+    }
+    </script>
 </body>
 </html>
