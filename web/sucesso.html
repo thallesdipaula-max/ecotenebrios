@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#6B8E71">
+    <title>Compra Confirmada! - Ecotenébrios</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Meta Pixel Code (Rastreamento de Compra Ativado) -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,n.arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1006621321781390');
+    fbq('track', 'PageView');
+    
+    // Dispara a conversão de Compra no Facebook com o valor do Kit
+    fbq('track', 'Purchase', {
+        value: 49.90,
+        currency: 'BRL',
+        content_name: 'Kit Premium Ecotenébrios',
+        content_type: 'product'
+    });
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1006621321781390&ev=Purchase&noscript=1"/>
+    </noscript>
+
+    <style>
+        .success-page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            padding: var(--spacing-xl) var(--spacing-sm);
+            text-align: center;
+        }
+        .success-container {
+            max-width: 600px;
+            background: white;
+            padding: var(--spacing-xl) var(--spacing-md);
+            border-radius: 20px;
+            border: 1px solid var(--color-border);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        .success-icon {
+            font-size: 60px;
+            margin-bottom: var(--spacing-md);
+        }
+        .success-title {
+            color: var(--color-primary-dark);
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--spacing-sm);
+        }
+        .success-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: var(--spacing-lg);
+        }
+        .address-box {
+            background-color: var(--color-bg);
+            border: 1px dashed var(--color-primary);
+            border-radius: 12px;
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+        .address-box h3 {
+            color: var(--color-primary-dark);
+            font-size: 16px;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 700;
+        }
+        .address-box p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 0;
+        }
+        .btn-success-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #25D366;
+            color: white;
+            padding: var(--spacing-md) var(--spacing-xl);
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            text-decoration: none !important;
+            width: 100%;
+        }
+        .btn-success-whatsapp:hover {
+            background-color: #128C7E;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .btn-icon-wa {
+            width: 20px;
+            height: auto;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: var(--spacing-md);
+            font-size: 14px;
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Slim -->
+    <header class="header">
+        <a href="index.html">
+            <img src="./assets/images/logo.png" alt="Logo Ecotenébrios" class="header-logo">
+        </a>
+    </header>
+
+    <main class="success-page">
+        <div class="success-container">
+            <div class="success-icon">🎉</div>
+            <h1 class="success-title">Obrigado pela sua compra!</h1>
+            <p class="success-text">O pagamento do seu <strong>Kit Premium Ecotenébrios</strong> foi processado com sucesso. O petisco favorito do seu pet está quase a caminho!</p>
+            
+            <div class="address-box">
+                <h3>⚠️ Passo Final Obrigatório</h3>
+                <p>Como o pagamento foi simplificado, precisamos que você nos envie o seu endereço completo de entrega pelo WhatsApp para podermos postar o seu produto.</p>
+            </div>
+
+            <a href="https://wa.me/5515981098418?text=Olá!%20Acabei%20de%20comprar%20o%20Kit%20Premium%20Ecotenébrios%20pelo%20Mercado%20Pago.%20Aqui%20está%20meu%20endereço%20para%20envio:" class="btn-success-whatsapp" target="_blank">
+                <img src="./assets/images/whatsapp-icon.png" alt="WhatsApp" class="btn-icon-wa">
+                Enviar Endereço de Entrega no WhatsApp
+            </a>
+
+            <a href="index.html" class="back-home">← Voltar para a página inicial</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom" style="margin-top: 0; padding-top: 0; text-align: center;">
+            <p>&copy; 2024 Ecotenébrios. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
