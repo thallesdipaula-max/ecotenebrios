@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ecotenebrios.com.br/sitemap.xml
