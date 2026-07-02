@@ -169,6 +169,7 @@ Operação da Ecotenébrios. Comercialização de alimentação natural para pet
 
 - [x] Instagram (@ecotenebrio.tenebrios) — principal canal
 - [x] WhatsApp — atendimento direto
+- [x] Google Search Console — conectado para monitoramento de SEO
 - [ ] Google Ads — para explorar depois
 - [ ] Meta Ads — para explorar depois
 - [ ] Google Analytics — se tiver site
