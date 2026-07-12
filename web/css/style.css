@@ -1427,7 +1427,7 @@ a:hover {
 .step-card {
     background: #FAF8F3;
     border: 1px solid var(--color-border);
-    border-radius: 16px;
+    border-radius: 12px;
     padding: var(--spacing-lg) var(--spacing-md);
     position: relative;
     transition: var(--transition);
