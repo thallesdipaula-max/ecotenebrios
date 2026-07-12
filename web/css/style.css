@@ -1084,7 +1084,21 @@ a:hover {
 }
 
 .offer-badge--blue {
-    background-color: var(--status-danger-border);
+    background-color: #4A7B9D;
+}
+
+.offer-badge--green {
+    background-color: #5B8C5A;
+}
+
+@media (min-width: 700px) {
+    .offer-horizontal--reverse .offer-image-col {
+        order: 2;
+    }
+
+    .offer-horizontal--reverse .offer-content-col {
+        order: 1;
+    }
 }
 
 .offer-title {
