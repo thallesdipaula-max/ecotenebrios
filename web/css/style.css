@@ -1084,11 +1084,11 @@ a:hover {
 }
 
 .offer-badge--blue {
-    background-color: #4A7B9D;
+    background-color: var(--status-danger-border);
 }
 
 .offer-badge--green {
-    background-color: #5B8C5A;
+    background-color: var(--color-primary-dark);
 }
 
 @media (min-width: 700px) {
