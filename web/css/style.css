@@ -13,6 +13,19 @@
     --color-border: #e0dcd0;
     --color-text-muted: #666666;
 
+    /* Status semântico (alertas, badges de risco em artigos) — recalibrado
+       para a paleta terrosa da marca, não os padrões vermelho/âmbar/verde
+       de UI genérica. */
+    --status-danger-bg: #F5E4DD;
+    --status-danger-border: #B3462F;
+    --status-danger-text: #7A2F1F;
+    --status-caution-bg: #F5EBD1;
+    --status-caution-border: #b3900f;
+    --status-caution-text: #7A5C0A;
+    --status-safe-bg: #E7EFE1;
+    --status-safe-border: var(--color-primary);
+    --status-safe-text: #3F5443;
+
     --spacing-xs: 8px;
     --spacing-sm: 16px;
     --spacing-md: 24px;
@@ -1353,8 +1366,8 @@ a:hover {
    Estilos Globais de Artigos (Alertas e Badges)
    ======================================== */
 .alert-box {
-    background-color: #FAF8F3;
-    border: 1px solid #d4a017;
+    background-color: var(--status-caution-bg);
+    border: 1px solid var(--status-caution-border);
     padding: var(--spacing-md);
     border-radius: 8px;
     margin: var(--spacing-md) 0;
@@ -1363,21 +1376,21 @@ a:hover {
 }
 
 .alert-box strong {
-    color: #a07811;
+    color: var(--status-caution-text);
 }
 
 .alert-box-critical {
-    background-color: #FDF2F2;
-    border: 1px solid #DE350B;
+    background-color: var(--status-danger-bg);
+    border: 1px solid var(--status-danger-border);
     padding: var(--spacing-md);
     border-radius: 8px;
     margin: var(--spacing-md) 0;
     font-size: var(--font-size-base);
-    color: #4A1515;
+    color: var(--status-danger-text);
 }
 
 .alert-box-critical strong {
-    color: #DE350B;
+    color: var(--status-danger-border);
 }
 
 .alert-box-tip {
@@ -1404,28 +1417,28 @@ a:hover {
 }
 
 .badge-proibido {
-    background-color: #FCE8E6;
-    color: #C5221F;
+    background-color: var(--status-danger-bg);
+    color: var(--status-danger-text);
 }
 
 .badge-restrito {
-    background-color: #FEF7E0;
-    color: #B06000;
+    background-color: var(--status-caution-bg);
+    color: var(--status-caution-text);
 }
 
 .badge-seguro {
-    background-color: #E6F4EA;
-    color: #137333;
+    background-color: var(--status-safe-bg);
+    color: var(--status-safe-text);
 }
 
 .badge-critico {
-    background-color: #FCE8E6;
-    color: #C5221F;
+    background-color: var(--status-danger-bg);
+    color: var(--status-danger-text);
 }
 
 .badge-moderado {
-    background-color: #FEF7E0;
-    color: #B06000;
+    background-color: var(--status-caution-bg);
+    color: var(--status-caution-text);
 }
 
 /* ========================================

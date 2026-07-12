@@ -9,19 +9,16 @@ colors:
   neutral-text: "#1A1A1A"
   neutral-text-muted: "#666666"
   border: "#e0dcd0"
-  status-warning-bg: "#FAF8F3"
-  status-warning-border: "#d4a017"
-  status-warning-text: "#a07811"
-  status-critical-bg: "#FDF2F2"
-  status-critical-border: "#DE350B"
-  status-critical-text: "#4A1515"
+  status-danger-bg: "#F5E4DD"
+  status-danger-border: "#B3462F"
+  status-danger-text: "#7A2F1F"
+  status-caution-bg: "#F5EBD1"
+  status-caution-border: "#b3900f"
+  status-caution-text: "#7A5C0A"
+  status-safe-bg: "#E7EFE1"
+  status-safe-border: "#6B8E71"
+  status-safe-text: "#3F5443"
   status-tip-bg: "#F0F7F4"
-  badge-proibido-bg: "#FCE8E6"
-  badge-proibido-text: "#C5221F"
-  badge-restrito-bg: "#FEF7E0"
-  badge-restrito-text: "#B06000"
-  badge-seguro-bg: "#E6F4EA"
-  badge-seguro-text: "#137333"
 typography:
   display:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
@@ -93,10 +90,12 @@ A paleta de cores reflete a natureza, saúde e vitalidade dos pets exóticos, us
 
 Cores semânticas fixas, usadas exclusivamente em conteúdo educativo (artigos do blog) para sinalizar risco/segurança. Não usar fora desse contexto.
 
-- **Aviso** (bg #FAF8F3, borda #d4a017, texto #a07811): `.alert-box` — atenção/cuidado moderado.
-- **Crítico** (bg #FDF2F2, borda #DE350B, texto #4A1515): `.alert-box-critical` — risco sério, perigo ao pet.
+Recalibradas para tons terrosos da própria marca em vez do vermelho/âmbar/verde padrão de UI (Material Design), mantendo o significado semântico mas evitando o "carimbo de template genérico".
+
+- **Perigo** (bg #F5E4DD, borda/texto #B3462F/#7A2F1F — terracota, não vermelho puro): `.alert-box-critical`, `.badge-proibido`, `.badge-critico` — risco sério, perigo ao pet.
+- **Cautela** (bg #F5EBD1, borda/texto #b3900f/#7A5C0A — dourado terroso): `.alert-box`, `.badge-restrito`, `.badge-moderado` — atenção/cuidado moderado.
+- **Seguro** (bg #E7EFE1, borda #6B8E71, texto #3F5443 — verde da própria marca): `.badge-seguro` — dentro da dieta natural do animal.
 - **Dica** (bg #F0F7F4, borda verde primária): `.alert-box-tip` — reforço positivo, dica prática.
-- **Badge Proibido** (bg #FCE8E6, texto #C5221F) / **Restrito** (bg #FEF7E0, texto #B06000) / **Seguro** (bg #E6F4EA, texto #137333): usados em tabelas de "o que meu pet pode comer".
 
 ## 3. Typography
 
