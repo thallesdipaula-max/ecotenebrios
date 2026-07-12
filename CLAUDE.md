@@ -177,6 +177,7 @@ Operação da Ecotenébrios. Comercialização de alimentação natural para pet
 ## Skills criadas
 
 - **✅ `/planejar-instagram`** — gera planejamento semanal de 5-7 posts educativos (automatiza tarefa repetitiva)
+- **✅ `/image-prompt-engineer`** — engenheiro de prompts para geração de imagens IA (fotografia, produto, capas de blog)
 
 ## Próximas skills a criar
 
