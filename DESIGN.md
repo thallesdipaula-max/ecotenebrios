@@ -7,7 +7,21 @@ colors:
   secondary: "#A8C9B5"
   neutral-bg: "#F5F1E8"
   neutral-text: "#1A1A1A"
+  neutral-text-muted: "#666666"
   border: "#e0dcd0"
+  status-warning-bg: "#FAF8F3"
+  status-warning-border: "#d4a017"
+  status-warning-text: "#a07811"
+  status-critical-bg: "#FDF2F2"
+  status-critical-border: "#DE350B"
+  status-critical-text: "#4A1515"
+  status-tip-bg: "#F0F7F4"
+  badge-proibido-bg: "#FCE8E6"
+  badge-proibido-text: "#C5221F"
+  badge-restrito-bg: "#FEF7E0"
+  badge-restrito-text: "#B06000"
+  badge-seguro-bg: "#E6F4EA"
+  badge-seguro-text: "#137333"
 typography:
   display:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
@@ -72,7 +86,17 @@ A paleta de cores reflete a natureza, saúde e vitalidade dos pets exóticos, us
 ### Neutral
 - **Areia Quente Suave** (#F5F1E8): Cor de fundo principal de toda a aplicação, que confere um tom aconchegante e natural ao site.
 - **Quase Preto / Carvão** (#1A1A1A): Usado para textos de corpo e títulos, mantendo leitura confortável e alta legibilidade.
+- **Cinza Muted** (#666666): Usado em metadados de artigo, células de tabela e texto de apoio (CTA), onde o preto puro seria pesado demais.
 - **Linho Muted / Cinza Quente** (#e0dcd0): Usado em bordas e divisores discretos.
+
+### Status (alertas, badges e tabelas de comparação)
+
+Cores semânticas fixas, usadas exclusivamente em conteúdo educativo (artigos do blog) para sinalizar risco/segurança. Não usar fora desse contexto.
+
+- **Aviso** (bg #FAF8F3, borda #d4a017, texto #a07811): `.alert-box` — atenção/cuidado moderado.
+- **Crítico** (bg #FDF2F2, borda #DE350B, texto #4A1515): `.alert-box-critical` — risco sério, perigo ao pet.
+- **Dica** (bg #F0F7F4, borda verde primária): `.alert-box-tip` — reforço positivo, dica prática.
+- **Badge Proibido** (bg #FCE8E6, texto #C5221F) / **Restrito** (bg #FEF7E0, texto #B06000) / **Seguro** (bg #E6F4EA, texto #137333): usados em tabelas de "o que meu pet pode comer".
 
 ## 3. Typography
 

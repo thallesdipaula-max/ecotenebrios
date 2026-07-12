@@ -188,7 +188,7 @@ a:hover {
 .description-hero {
     display: none;
     font-size: 15px;
-    color: #666;
+    color: var(--color-text-muted);
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -288,7 +288,7 @@ a:hover {
 
 .email-label {
     font-size: var(--font-size-base);
-    color: #666;
+    color: var(--color-text-muted);
     margin-bottom: var(--spacing-md);
 }
 
@@ -407,7 +407,7 @@ a:hover {
 }
 
 .benefit-card p {
-    color: #666;
+    color: var(--color-text-muted);
     font-size: 14px;
     margin: 0;
 }
@@ -457,7 +457,7 @@ a:hover {
 }
 
 .about-text p {
-    color: #666;
+    color: var(--color-text-muted);
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: var(--spacing-md);
@@ -522,7 +522,7 @@ a:hover {
 
 .product-card p {
     padding: 0 var(--spacing-md) var(--spacing-md);
-    color: #666;
+    color: var(--color-text-muted);
     font-size: 14px;
 }
 
@@ -586,21 +586,28 @@ a:hover {
 }
 
 .faq-answer {
-    max-height: 0;
-    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr;
     background-color: white;
-    transition: max-height 0.3s ease;
+    transition: grid-template-rows 0.3s ease;
 }
 
 .faq-item.active .faq-answer {
-    max-height: 500px;
+    grid-template-rows: 1fr;
 }
 
 .faq-answer p {
+    overflow: hidden;
     padding: var(--spacing-md);
-    color: #666;
+    color: var(--color-text-muted);
     font-size: 14px;
     margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .faq-answer {
+        transition: none;
+    }
 }
 
 /* Trust Section */
@@ -942,7 +949,7 @@ a:hover {
 }
 
 .section-subtitle {
-    color: #666;
+    color: var(--color-text-muted);
     font-size: var(--font-size-base);
     margin-bottom: var(--spacing-xl);
 }
@@ -997,7 +1004,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     background-color: #f0ebe0;
-    color: #555;
+    color: var(--color-text-muted);
     padding: 2px 8px;
     border-radius: 20px;
     font-weight: 600;
@@ -1053,7 +1060,7 @@ a:hover {
 }
 
 .offer-description {
-    color: #666;
+    color: var(--color-text-muted);
     font-size: 16px;
     max-width: 600px;
     margin: 0 auto var(--spacing-lg);
@@ -1270,7 +1277,7 @@ a:hover {
 
 .blog-card-excerpt {
     font-size: 14px;
-    color: #666;
+    color: var(--color-text-muted);
     margin-bottom: var(--spacing-md);
     line-height: 1.6;
     flex-grow: 1;
@@ -1629,7 +1636,7 @@ a:hover {
 
 .step-card p {
     font-size: 14px;
-    color: #666;
+    color: var(--color-text-muted);
     line-height: 1.6;
     margin-bottom: 0;
 }
