@@ -1014,13 +1014,13 @@ a:hover {
     transition: var(--transition);
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    text-decoration: none;
 }
 
 .pet-segment-card:hover {
     transform: translateY(-4px) scale(1.02);
     border-color: var(--color-primary);
     box-shadow: 0 8px 16px rgba(107, 142, 113, 0.15);
-    text-decoration: none !important;
 }
 
 .pet-segment-card h3 {
