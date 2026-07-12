@@ -1059,12 +1059,12 @@ a:hover {
 .offer-container {
     max-width: 800px;
     margin: 0 auto;
-    background: linear-gradient(135deg, #FAF8F3 0%, #F5F1E8 100%);
-    border: 2px solid var(--color-primary);
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, #32422f 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 20px;
     padding: var(--spacing-xl) var(--spacing-md);
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 24px 48px rgba(26, 34, 29, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -1073,25 +1073,25 @@ a:hover {
     position: absolute;
     top: 15px;
     left: -35px;
-    background-color: #d9534f;
+    background-color: var(--status-danger-border);
     color: white;
     font-size: 10px;
     font-weight: 700;
     padding: 6px 40px;
     transform: rotate(-30deg);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
     letter-spacing: 0.05em;
 }
 
 .offer-title {
-    color: var(--color-primary-dark);
+    color: white;
     font-size: var(--font-size-2xl);
     margin-top: 10px;
     margin-bottom: var(--spacing-xs);
 }
 
 .offer-description {
-    color: var(--color-text-muted);
+    color: var(--color-secondary);
     font-size: 16px;
     max-width: 600px;
     margin: 0 auto var(--spacing-lg);
@@ -1149,7 +1149,7 @@ a:hover {
 
 .price-label {
     font-size: 13px;
-    color: #777;
+    color: var(--color-text-muted);
     text-transform: uppercase;
 }
 
@@ -1215,6 +1215,18 @@ a:hover {
     animation: attention 3s infinite;
 }
 
+.offer-container .btn-offer {
+    background-color: var(--color-bg);
+    color: var(--color-primary-dark);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.offer-container .btn-offer:hover {
+    background-color: white;
+    color: var(--color-primary-dark);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
 @keyframes attention {
     0%, 100% { transform: scale(1); }
     5% { transform: scale(1.03); }
@@ -1225,7 +1237,7 @@ a:hover {
 
 .offer-fineprint {
     font-size: 12px;
-    color: #999;
+    color: rgba(255, 255, 255, 0.82);
     margin-top: var(--spacing-sm);
     }
 
