@@ -1,0 +1,122 @@
+BLOG CLUSTER AUDIT LOG
+======================
+
+Article: tenebrio-para-pets-exoticos
+Status: WARNING
+Warnings:
+  - Title tag is long (79 chars): 'Tenébrio para pets exóticos: o que é, para que serve e como usar - Ecotenébrios'
+  - Meta description is long (174 chars)
+Info:
+  - Title: Tenébrio para pets exóticos: o que é, para que serve e como usar - Ecotenébrios
+  - Description: Guia completo sobre Tenébrios para pets exóticos: o que é, benefícios nutricionais, quantidade ideal por espécie (Gecko, Pogona, Aves, Hamster) e como oferecer com segurança.
+  - H1: Tenébrio para pets exóticos: o que é, para que serve e como usar na dieta
+  - Images count: 7
+  - Canonical: https://ecotenebrios.com.br/blog/tenebrio-para-pets-exoticos
+  - Schema count: 1
+  - Linked articles: ['alimentacao-natural-repteis', 'alimentacao-natural-roedores-exoticos', 'onde-comprar-tenebrio-vivo', 'frutas-e-vegetais-seguros-pets-exoticos', 'alimentos-proibidos-pets-exoticos', 'larvas-de-tenebrio-diferencas-nutricionais', 'alimentacao-natural-passaros-exoticos', 'suplementacao-pets-exoticos']
+
+Article: alimentacao-natural-passaros-exoticos
+Status: WARNING
+Warnings:
+  - Title tag is long (113 chars): 'Alimentação natural para pássaros exóticos: o que calopsita, periquito, arara e tucano podem comer - Ecotenébrios'
+  - Meta description is long (161 chars)
+Info:
+  - Title: Alimentação natural para pássaros exóticos: o que calopsita, periquito, arara e tucano podem comer - Ecotenébrios
+  - Description: Guia definitivo de alimentação natural para pássaros exóticos (Calopsita, Periquito, Araras, Papagaios, Tucanos). Saiba o que oferecer e evite doenças hepáticas.
+  - H1: Alimentação natural para pássaros exóticos: o que calopsita, periquito, arara e tucano podem comer
+  - Images count: 7
+  - Canonical: https://ecotenebrios.com.br/blog/alimentacao-natural-passaros-exoticos
+  - Schema count: 1
+  - Linked articles: ['tenebrio-para-pets-exoticos', 'alimentacao-natural-repteis', 'alimentacao-natural-roedores-exoticos', 'onde-comprar-tenebrio-vivo', 'frutas-e-vegetais-seguros-pets-exoticos', 'alimentos-proibidos-pets-exoticos', 'larvas-de-tenebrio-diferencas-nutricionais', 'suplementacao-pets-exoticos']
+
+Article: alimentacao-natural-roedores-exoticos
+Status: WARNING
+Warnings:
+  - Title tag is long (131 chars): 'Alimentação natural para roedores exóticos: o que porquinho-da-índia, chinchila, hamster e ouriço-pigmeu podem comer - Ecotenébrios'
+Info:
+  - Title: Alimentação natural para roedores exóticos: o que porquinho-da-índia, chinchila, hamster e ouriço-pigmeu podem comer - Ecotenébrios
+  - Description: Guia definitivo de alimentação natural para roedores exóticos (Porquinho-da-Índia, Chinchila, Hamster, Ouriço). Feno, Vitamina C e insetos adequados.
+  - H1: Alimentação natural para roedores exóticos: o que porquinho-da-índia, chinchila, hamster e ouriço-pigmeu podem comer
+  - Images count: 8
+  - Canonical: https://ecotenebrios.com.br/blog/alimentacao-natural-roedores-exoticos
+  - Schema count: 1
+  - Linked articles: ['tenebrio-para-pets-exoticos', 'alimentacao-natural-repteis', 'onde-comprar-tenebrio-vivo', 'frutas-e-vegetais-seguros-pets-exoticos', 'alimentos-proibidos-pets-exoticos', 'larvas-de-tenebrio-diferencas-nutricionais', 'alimentacao-natural-passaros-exoticos', 'suplementacao-pets-exoticos']
+
+Article: alimentacao-natural-repteis
+Status: WARNING
+Warnings:
+  - Title tag is long (74 chars): 'Alimentação natural para répteis: guia completo por espécie - Ecotenébrios'
+Info:
+  - Title: Alimentação natural para répteis: guia completo por espécie - Ecotenébrios
+  - Description: Guia definitivo de alimentação natural para répteis (Gecko, Pogona, Iguana, Camaleão). Saiba o que oferecer, frequência e o protocolo correto de cálcio.
+  - H1: Alimentação natural para répteis: guia por espécie com o que oferecer, quanto e com que frequência
+  - Images count: 8
+  - Canonical: https://ecotenebrios.com.br/blog/alimentacao-natural-repteis
+  - Schema count: 1
+  - Linked articles: ['tenebrio-para-pets-exoticos', 'alimentacao-natural-roedores-exoticos', 'onde-comprar-tenebrio-vivo', 'frutas-e-vegetais-seguros-pets-exoticos', 'alimentos-proibidos-pets-exoticos', 'larvas-de-tenebrio-diferencas-nutricionais', 'alimentacao-natural-passaros-exoticos', 'suplementacao-pets-exoticos']
+
+Article: alimentos-proibidos-pets-exoticos
+Status: WARNING
+Warnings:
+  - Title tag is long (82 chars): 'Alimentos proibidos para pets exóticos: tabela completa por espécie - Ecotenébrios'
+Info:
+  - Title: Alimentos proibidos para pets exóticos: tabela completa por espécie - Ecotenébrios
+  - Description: Guia e tabela completa de alimentos proibidos e restritos para pets exóticos (répteis, aves e roedores). Saiba os riscos e previna acidentes alimentares.
+  - H1: Alimentos proibidos para pets exóticos: tabela completa por espécie com nível de risco
+  - Images count: 7
+  - Canonical: https://ecotenebrios.com.br/blog/alimentos-proibidos-pets-exoticos
+  - Schema count: 1
+  - Linked articles: ['tenebrio-para-pets-exoticos', 'alimentacao-natural-repteis', 'alimentacao-natural-roedores-exoticos', 'onde-comprar-tenebrio-vivo', 'frutas-e-vegetais-seguros-pets-exoticos', 'larvas-de-tenebrio-diferencas-nutricionais', 'alimentacao-natural-passaros-exoticos', 'suplementacao-pets-exoticos']
+
+Article: onde-comprar-tenebrio-vivo
+Status: WARNING
+Warnings:
+  - Title tag is long (75 chars): 'Onde comprar tenébrio vivo para pets exóticos: guia completo - Ecotenébrios'
+Info:
+  - Title: Onde comprar tenébrio vivo para pets exóticos: guia completo - Ecotenébrios
+  - Description: Guia completo de onde comprar tenébrio vivo no Brasil. Canais de venda, cuidados com embalagem, logística e como armazenar corretamente.
+  - H1: Onde comprar tenébrio vivo para pets exóticos: guia de canais, o que verificar e como receber com segurança
+  - Images count: 6
+  - Canonical: https://ecotenebrios.com.br/blog/onde-comprar-tenebrio-vivo
+  - Schema count: 1
+  - Linked articles: ['tenebrio-para-pets-exoticos', 'alimentacao-natural-repteis', 'alimentacao-natural-roedores-exoticos', 'frutas-e-vegetais-seguros-pets-exoticos', 'alimentos-proibidos-pets-exoticos', 'larvas-de-tenebrio-diferencas-nutricionais', 'alimentacao-natural-passaros-exoticos', 'suplementacao-pets-exoticos']
+
+Article: larvas-de-tenebrio-diferencas-nutricionais
+Status: WARNING
+Warnings:
+  - Title tag is long (94 chars): 'Larvas de tenébrio: diferenças nutricionais entre espécies, estágios e formatos - Ecotenébrios'
+  - Meta description is long (165 chars)
+Info:
+  - Title: Larvas de tenébrio: diferenças nutricionais entre espécies, estágios e formatos - Ecotenébrios
+  - Description: Saiba as diferenças nutricionais das larvas de tenébrio por espécies (Molitor, Gigante, Mini), estágios de crescimento, gut loading e formatos (vivo ou desidratado).
+  - H1: Larvas de tenébrio: diferenças nutricionais entre espécies, estágios e formatos
+  - Images count: 6
+  - Canonical: https://ecotenebrios.com.br/blog/larvas-de-tenebrio-diferencas-nutricionais
+  - Schema count: 1
+  - Linked articles: ['tenebrio-para-pets-exoticos', 'alimentacao-natural-repteis', 'alimentacao-natural-roedores-exoticos', 'onde-comprar-tenebrio-vivo', 'frutas-e-vegetais-seguros-pets-exoticos', 'alimentos-proibidos-pets-exoticos', 'alimentacao-natural-passaros-exoticos', 'suplementacao-pets-exoticos']
+
+Article: frutas-e-vegetais-seguros-pets-exoticos
+Status: WARNING
+Warnings:
+  - Title tag is long (77 chars): 'Frutas e vegetais seguros para pets exóticos: guia por espécie - Ecotenébrios'
+Info:
+  - Title: Frutas e vegetais seguros para pets exóticos: guia por espécie - Ecotenébrios
+  - Description: Guia completo de frutas e vegetais seguros para pets exóticos (répteis, aves e roedores). Saiba a frequência correta e previna riscos na dieta.
+  - H1: Frutas e vegetais seguros para pets exóticos: guia completo por espécie com frequência e observações
+  - Images count: 8
+  - Canonical: https://ecotenebrios.com.br/blog/frutas-e-vegetais-seguros-pets-exoticos
+  - Schema count: 1
+  - Linked articles: ['tenebrio-para-pets-exoticos', 'alimentacao-natural-repteis', 'alimentacao-natural-roedores-exoticos', 'onde-comprar-tenebrio-vivo', 'alimentos-proibidos-pets-exoticos', 'larvas-de-tenebrio-diferencas-nutricionais', 'alimentacao-natural-passaros-exoticos', 'suplementacao-pets-exoticos']
+
+Article: suplementacao-pets-exoticos
+Status: WARNING
+Warnings:
+  - Title tag is long (90 chars): 'Suplementação para pets exóticos: cálcio, D3, vitamina A e multivitamínicos - Ecotenébrios'
+Info:
+  - Title: Suplementação para pets exóticos: cálcio, D3, vitamina A e multivitamínicos - Ecotenébrios
+  - Description: Guia definitivo de suplementação para pets exóticos. Cálcio puro, cálcio com vitamina D3, vitamina A e multivitamínicos sem riscos de toxicidade.
+  - H1: Suplementação para pets exóticos: cálcio, vitamina D3, vitamina A e multivitamínicos — guia completo
+  - Images count: 7
+  - Canonical: https://ecotenebrios.com.br/blog/suplementacao-pets-exoticos
+  - Schema count: 1
+  - Linked articles: ['tenebrio-para-pets-exoticos', 'alimentacao-natural-repteis', 'alimentacao-natural-roedores-exoticos', 'onde-comprar-tenebrio-vivo', 'frutas-e-vegetais-seguros-pets-exoticos', 'alimentos-proibidos-pets-exoticos', 'larvas-de-tenebrio-diferencas-nutricionais', 'alimentacao-natural-passaros-exoticos']
