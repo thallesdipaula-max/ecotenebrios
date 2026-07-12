@@ -413,6 +413,34 @@ a:hover {
     display: block;
 }
 
+.benefit-icon .ph {
+    color: var(--color-primary);
+}
+
+.trust-icon .ph {
+    font-size: 48px;
+    color: var(--color-primary);
+}
+
+.pet-icon {
+    font-size: 32px;
+    margin-bottom: var(--spacing-xs);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pet-segment-card:hover .pet-icon {
+    transform: scale(1.1) rotate(6deg);
+}
+
 .benefit-card h3 {
     color: var(--color-primary);
     margin-bottom: var(--spacing-sm);
@@ -995,16 +1023,6 @@ a:hover {
     text-decoration: none !important;
 }
 
-.pet-icon {
-    font-size: 40px;
-    margin-bottom: var(--spacing-xs);
-    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.pet-segment-card:hover .pet-icon {
-    transform: scale(1.1) rotate(6deg);
-}
-
 .pet-segment-card h3 {
     font-size: 15px;
     color: var(--color-text);
@@ -1169,7 +1187,19 @@ a:hover {
     border-radius: 30px;
     margin-top: 8px;
     letter-spacing: 0.05em;
-    animation: pulse 2s infinite;
+        animation: pulse 2s infinite;
+}
+
+.shipping-tag .ph {
+    font-size: 14px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.btn-offer .ph {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
 }
 
 @keyframes pulse {
