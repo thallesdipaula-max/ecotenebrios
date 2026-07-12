@@ -1339,6 +1339,37 @@ a:hover {
     color: white;
 }
 
+/* Kit Premium: card principal, se destaca dos demais com verde comprometido */
+.offer-container.offer-flagship {
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, #32422f 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 24px 48px rgba(26, 34, 29, 0.3);
+}
+
+.offer-flagship .offer-title {
+    color: white;
+}
+
+.offer-flagship .offer-description {
+    color: var(--color-secondary);
+}
+
+.offer-flagship .offer-fineprint {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.offer-flagship .btn-offer {
+    background-color: var(--color-bg);
+    color: var(--color-primary-dark);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.offer-flagship .btn-offer:hover {
+    background-color: white;
+    color: var(--color-primary-dark);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
 /* ========================================
    Seção de Blog/Conteúdo Educativo
    ======================================== */
