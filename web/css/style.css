@@ -73,14 +73,14 @@ p {
 }
 
 a {
-    color: var(--color-primary);
-    text-decoration: none;
+    color: var(--color-primary-dark);
+    text-decoration: underline;
     transition: var(--transition);
 }
 
 a:hover {
-    color: var(--color-primary-dark);
-    text-decoration: underline;
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
 /* Hero Section */
@@ -229,7 +229,7 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
     color: white;
     display: flex;
     align-items: center;
@@ -248,8 +248,8 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: var(--color-primary-dark);
-    box-shadow: 0 12px 24px rgba(107, 142, 113, 0.35), 0 0 20px rgba(107, 142, 113, 0.15);
+    background-color: #324236;
+    box-shadow: 0 12px 24px rgba(50, 66, 54, 0.35), 0 0 20px rgba(50, 66, 54, 0.15);
     text-decoration: none;
 }
 
@@ -267,13 +267,13 @@ a:hover {
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--color-primary);
-    border: 2px solid var(--color-primary);
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-dark);
     padding: calc(var(--spacing-sm) - 2px) calc(var(--spacing-lg) - 2px);
 }
 
 .btn-secondary:hover {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
     color: white;
     text-decoration: none;
 }
@@ -654,10 +654,10 @@ a:hover {
     background: linear-gradient(135deg, #f9f7f3 0%, white 100%);
     padding: var(--spacing-lg);
     border-radius: 12px;
-    border-left: 4px solid var(--color-primary);
+    border: 1px solid var(--color-primary);
     max-width: 600px;
     margin: 0 auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
 .testimonial-text {
@@ -1332,4 +1332,59 @@ a:hover {
     .hero {
         min-height: auto;
     }
+}
+
+/* ========================================
+   Estilos Globais de Artigos (Alertas e Badges)
+   ======================================== */
+.alert-box {
+    background-color: #FAF8F3;
+    border: 1px solid #d4a017;
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    margin: var(--spacing-md) 0;
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+}
+
+.alert-box strong {
+    color: #a07811;
+}
+
+.alert-box-critical {
+    background-color: #FDF2F2;
+    border: 1px solid #DE350B;
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    margin: var(--spacing-md) 0;
+    font-size: var(--font-size-base);
+    color: #4A1515;
+}
+
+.alert-box-critical strong {
+    color: #DE350B;
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.badge-proibido {
+    background-color: #FCE8E6;
+    color: #C5221F;
+}
+
+.badge-restrito {
+    background-color: #FEF7E0;
+    color: #B06000;
+}
+
+.badge-seguro {
+    background-color: #E6F4EA;
+    color: #137333;
 }
