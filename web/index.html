@@ -751,16 +751,37 @@
         </div>
     </footer>
 <script>
+// Meta Pixel — o stub e a fila de eventos sao criados imediatamente, entao
+// nenhum fbq() se perde. So o download do fbevents.js e adiado, para nao
+// competir com a imagem do hero (LCP). A fila dispara assim que ele carrega.
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,n.arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+n.queue=[]}(window, document,'script');
 fbq('init', '1006621321781390');
 fbq('track', 'PageView');
+
+// Carrega na primeira interacao do usuario ou 1,5s apos o load — o que vier antes.
+(function () {
+    var carregado = false;
+    function carregarPixel() {
+        if (carregado) return;
+        carregado = true;
+        var t = document.createElement('script');
+        t.async = true;
+        t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+        document.head.appendChild(t);
+    }
+    ['pointerdown', 'touchstart', 'keydown', 'scroll'].forEach(function (evento) {
+        window.addEventListener(evento, carregarPixel, { once: true, passive: true });
+    });
+    if (document.readyState === 'complete') {
+        setTimeout(carregarPixel, 1500);
+    } else {
+        window.addEventListener('load', function () { setTimeout(carregarPixel, 1500); }, { once: true });
+    }
+})();
 </script>
 <noscript>
   <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1006621321781390&ev=PageView&noscript=1"/>
@@ -772,14 +793,29 @@ function toggleFaq(element) {
 }
 
 // Show WhatsApp button after first scroll
-window.addEventListener('scroll', function() {
-    const whatsappBtn = document.querySelector('.whatsapp-float');
-    if (window.scrollY > 100) {
-        whatsappBtn.classList.add('visible');
-    } else {
-        whatsappBtn.classList.remove('visible');
+// Passive + referencia em cache + so escreve quando o estado muda, para nao
+// forcar recalculo de layout a cada frame de rolagem.
+(function () {
+    let whatsappBtn = null;
+    let visivel = false;
+    let agendado = false;
+
+    function atualizar() {
+        agendado = false;
+        if (!whatsappBtn) whatsappBtn = document.querySelector('.whatsapp-float');
+        if (!whatsappBtn) return;
+        const deveAparecer = window.scrollY > 100;
+        if (deveAparecer === visivel) return;
+        visivel = deveAparecer;
+        whatsappBtn.classList.toggle('visible', deveAparecer);
     }
-});
+
+    window.addEventListener('scroll', function () {
+        if (agendado) return;
+        agendado = true;
+        requestAnimationFrame(atualizar);
+    }, { passive: true });
+})();
 
 // Meta Pixel tracking para cliques no WhatsApp (Leads) e Mercado Pago (Checkouts)
 document.addEventListener('DOMContentLoaded', function() {
