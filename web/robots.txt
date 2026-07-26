@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /sucesso/
 
 Sitemap: https://ecotenebrios.com.br/sitemap.xml

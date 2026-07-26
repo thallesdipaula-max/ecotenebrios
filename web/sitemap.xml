@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ecotenebrios.com.br/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://ecotenebrios.com.br/blog/alimentacao-natural-passaros-exoticos/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,13 +68,13 @@
   </url>
   <url>
     <loc>https://ecotenebrios.com.br/blog/onde-comprar-tenebrio-vivo/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ecotenebrios.com.br/blog/frutas-e-vegetais-seguros-pets-exoticos/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -87,6 +87,12 @@
   <url>
     <loc>https://ecotenebrios.com.br/blog/alimentos-proibidos-pets-exoticos/</loc>
     <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ecotenebrios.com.br/blog/calopsita-pode-comer-melao-kiwi-mexerica/</loc>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
