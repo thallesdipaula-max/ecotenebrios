@@ -10,6 +10,9 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#6B8E71">
     <link rel="canonical" href="https://ecotenebrios.com.br/" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preload" href="./assets/images/hero.webp" as="image" fetchpriority="high">
     <meta name="google-site-verification" content="2i4s8L3_40qozv9sEj4n7zXH-IPSSSU5tgehxaDW0kw" />
 
     <!-- Open Graph / Facebook / WhatsApp Link Preview -->
@@ -27,8 +30,18 @@
 
     <title>Ecotenébrios - Alimentação Natural para Pets Exóticos</title>
     <link rel="icon" type="image/png" href="./assets/images/logo.webp">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+    <style>
+    :root{--color-bg:#F5F1E8;--color-text:#1A1A1A;--color-primary:#6B8E71;--color-primary-dark:#4a5f4e;--color-secondary:#A8C9B5;--color-border:#e0dcd0;--color-text-muted:#666666;--spacing-xs:8px;--spacing-sm:16px;--spacing-md:24px;--spacing-lg:32px;--spacing-xl:48px;--font-sans:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Poppins','Inter',sans-serif;--font-size-base:16px;--font-size-lg:18px;--font-size-xl:24px;--font-size-2xl:32px;--font-size-3xl:48px;--transition:all 0.3s ease}*{margin:0;padding:0;box-sizing:border-box}.header{padding:8px var(--spacing-sm);background-color:var(--color-bg);border-bottom:1px solid var(--color-border);text-align:center}.header-logo{height:40px;width:auto;display:inline-block}html{scroll-behavior:smooth}body{font-family:var(--font-sans);background-color:var(--color-bg);color:var(--color-text);line-height:1.6;font-size:var(--font-size-base)}
+    h1,h2,h3{font-weight:700;line-height:1.3;margin-bottom:var(--spacing-sm)}p{margin-bottom:var(--spacing-md)}a{color:var(--color-primary-dark);text-decoration:underline;transition:var(--transition)}a:hover{color:var(--color-primary);text-decoration:none}
+    .hero{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:12px var(--spacing-sm);background:linear-gradient(135deg,var(--color-bg) 0%,#faf8f3 100%)}.hero-content{max-width:1200px;width:100%;display:grid;grid-template-columns:1fr;grid-template-rows:auto auto auto;gap:6px;align-items:flex-start}.hero-text{text-align:center;order:1}.hero-image-container{display:flex;justify-content:center;align-items:center;position:relative;min-height:160px;margin:8px 0;width:100%;grid-column:1}.headline{font-size:28px;color:var(--color-text);margin-bottom:6px;font-weight:600;text-align:center;line-height:1.2}.subheadline{font-size:15px;color:var(--color-text);margin-bottom:12px;font-weight:600;line-height:1.4}.description-hero{display:none}.hero-image{max-width:100%;width:100%;height:auto;border-radius:12px;box-shadow:0 12px 24px rgba(0,0,0,.1)}.support-text{display:none}
+    .btn{display:inline-block;padding:var(--spacing-sm) var(--spacing-lg);border-radius:8px;font-size:var(--font-size-base);font-weight:600;transition:var(--transition);border:none;cursor:pointer;text-align:center;text-decoration:none;margin-bottom:var(--spacing-md)}.btn-primary{background-color:var(--color-primary-dark);color:#fff;display:flex;align-items:center;justify-content:center;gap:var(--spacing-xs);margin:0 auto;width:100%;max-width:400px;transition:all .3s cubic-bezier(.25,.46,.45,.94)}.btn-hero{margin:0 auto}.btn-icon-img{height:20px;width:20px;margin-right:8px;display:inline-block;vertical-align:middle}
+    .logo-overlay{position:absolute;bottom:16px;right:16px;height:110px;width:auto;opacity:.9;z-index:10}
+    @media (min-width:768px){.header{padding:var(--spacing-lg) var(--spacing-xl)}.header-logo{height:90px}.hero{padding:var(--spacing-xl)}.hero-content{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:var(--spacing-xl)}.hero-text{text-align:left;grid-column:1;grid-row:2}.headline{grid-column:1;grid-row:1;text-align:left;font-size:var(--font-size-3xl)}.hero-image-container{grid-column:2;grid-row:1/3;min-height:550px}.hero-text .btn-hero{margin-left:0;margin-right:auto}.subheadline{font-size:var(--font-size-xl)}.support-text{display:block}.description-hero{display:block;font-size:15px;color:var(--color-text-muted);margin-bottom:20px;line-height:1.6}.logo-overlay{height:140px;bottom:20px;right:20px}.btn-primary{width:auto;padding:var(--spacing-sm) var(--spacing-xl)}}
+    </style>
+    <link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./css/style.css"></noscript>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"></noscript>
 
     <!-- SEO: Dados Estruturados Google (Schema.org LocalBusiness) -->
     <script type="application/ld+json">
@@ -99,35 +112,16 @@
       }]
     }
     </script>
-
-    <!-- Meta Pixel Code (Remarketing) - ATIVADO -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,n.arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1006621321781390');
-    fbq('track', 'PageView');
-    </script>
-    <noscript>
-      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1006621321781390&ev=PageView&noscript=1"/>
-    </noscript>
-
-
 </head>
 <body>
     <!-- WhatsApp Floating Button (Mobile) -->
     <a href="https://wa.me/5515981098418?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Ecotenébrios." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
-        <img src="./assets/images/whatsapp-icon.webp" alt="WhatsApp" class="whatsapp-icon">
+        <img src="./assets/images/whatsapp-icon.webp" alt="WhatsApp" class="whatsapp-icon" width="490" height="509">
     </a>
 
     <!-- Header Slim -->
     <header class="header">
-        <img src="./assets/images/logo.webp" alt="Logo Ecotenébrios" class="header-logo">
+        <img src="./assets/images/logo.webp" alt="Logo Ecotenébrios" class="header-logo" width="500" height="500">
     </header>
 
     <main>
@@ -138,8 +132,8 @@
 
                 <!-- Hero Image -->
                 <div class="hero-image-container">
-                    <img src="./assets/images/hero.webp" alt="Tenébrio na mão - Alimentação Natural Premium" class="hero-image">
-                    <img src="./assets/images/logo.webp" alt="Ecotenébrios" class="logo-overlay">
+                    <img src="./assets/images/hero.webp" alt="Tenébrio na mão - Alimentação Natural Premium" class="hero-image" width="1024" height="1024" fetchpriority="high">
+                    <img src="./assets/images/logo.webp" alt="Ecotenébrios" class="logo-overlay" width="500" height="500">
                 </div>
 
                 <div class="hero-text">
@@ -151,7 +145,7 @@
 
                 <!-- CTA Primary: WhatsApp (Above the Fold) -->
                 <a href="https://wa.me/5515981098418?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Ecotenébrios." class="btn btn-primary btn-hero" target="_blank" rel="noopener">
-                    <img src="./assets/images/whatsapp-icon.webp" alt="WhatsApp" class="btn-icon-img">
+                    <img src="./assets/images/whatsapp-icon.webp" alt="WhatsApp" class="btn-icon-img" width="490" height="509">
                     Conversar no WhatsApp
                 </a>
 
@@ -163,7 +157,7 @@
         <section class="premium-offer-section">
             <div class="offer-container offer-horizontal offer-flagship">
                 <div class="offer-image-col">
-                    <img src="./assets/images/oferta-kit-premium.webp" alt="Kit Premium Ecotenébrios" class="offer-product-img" loading="lazy">
+                    <img src="./assets/images/oferta-kit-premium.webp" alt="Kit Premium Ecotenébrios" class="offer-product-img" loading="lazy" width="480" height="480">
                 </div>
                 <div class="offer-content-col">
                     <div class="offer-badge">OFERTA ESPECIAL DE ENTRADA</div>
@@ -201,7 +195,7 @@
         <section class="premium-offer-section">
             <div class="offer-container offer-horizontal">
                 <div class="offer-image-col">
-                    <img src="./assets/images/oferta-tenebrios-desidratados.webp" alt="Tenébrios Desidratados 50g" class="offer-product-img" loading="lazy">
+                    <img src="./assets/images/oferta-tenebrios-desidratados.webp" alt="Tenébrios Desidratados 50g" class="offer-product-img" loading="lazy" width="480" height="480">
                 </div>
                 <div class="offer-content-col">
                     <div class="offer-badge offer-badge--blue">COMPRA SEGURA</div>
@@ -239,7 +233,7 @@
         <section class="premium-offer-section">
             <div class="offer-container offer-horizontal offer-horizontal--reverse">
                 <div class="offer-image-col">
-                    <img src="./assets/images/oferta-minhocas.webp" alt="Minhocas Californianas" class="offer-product-img" loading="lazy">
+                    <img src="./assets/images/oferta-minhocas.webp" alt="Minhocas Californianas" class="offer-product-img" loading="lazy" width="480" height="480">
                 </div>
                 <div class="offer-content-col">
                     <div class="offer-badge offer-badge--green">NOVO</div>
@@ -280,32 +274,32 @@
                 <p class="section-subtitle">Escolha o seu pet para ver a alimentação recomendada:</p>
                 <div class="pet-grid">
                     <a href="https://wa.me/5515981098418?text=Olá!%20Tenho%20um%20Gecko%20Leopardo%20e%20gostaria%20de%20indicação%20de%20alimentação%20natural." class="pet-segment-card" target="_blank" rel="noopener">
-                        <div class="pet-icon"><img src="./assets/images/gecko-leopardo.webp" alt="Gecko Leopardo" loading="lazy" style="object-position: 70% 25%;"></div>
+                        <div class="pet-icon"><img src="./assets/images/gecko-leopardo.webp" alt="Gecko Leopardo" loading="lazy" width="64" height="64" style="object-position: 70% 25%;"></div>
                         <h3>Geko Leopardo</h3>
                         <span class="pet-tag">Répteis</span>
                     </a>
                     <a href="https://wa.me/5515981098418?text=Olá!%20Tenho%20um%20Dragão%20Barbudo%20(Pogona)%20e%20gostaria%20de%20indicação%20de%20alimentação%20natural." class="pet-segment-card" target="_blank" rel="noopener">
-                        <div class="pet-icon"><img src="./assets/images/dragao-barbudo-pogona.webp" alt="Dragão Barbudo (Pogona)" loading="lazy" style="object-position: 50% 20%;"></div>
+                        <div class="pet-icon"><img src="./assets/images/dragao-barbudo-pogona.webp" alt="Dragão Barbudo (Pogona)" loading="lazy" width="64" height="64" style="object-position: 50% 20%;"></div>
                         <h3>Dragão Barbudo (Pogona)</h3>
                         <span class="pet-tag">Répteis</span>
                     </a>
                     <a href="https://wa.me/5515981098418?text=Olá!%20Tenho%20um%20Ouriço%20Pigmeu%20e%20gostaria%20de%20indicação%20de%20alimentação%20natural." class="pet-segment-card" target="_blank" rel="noopener">
-                        <div class="pet-icon"><img src="./assets/images/ourico-pigmeu.webp" alt="Ouriço Pigmeu" loading="lazy" style="object-position: 35% 50%;"></div>
+                        <div class="pet-icon"><img src="./assets/images/ourico-pigmeu.webp" alt="Ouriço Pigmeu" loading="lazy" width="64" height="64" style="object-position: 35% 50%;"></div>
                         <h3>Ouriço Pigmeu</h3>
                         <span class="pet-tag">Mamíferos</span>
                     </a>
                     <a href="https://wa.me/5515981098418?text=Olá!%20Tenho%20um%20Hamster%20e%20gostaria%20de%20indicação%20de%20alimentação%20natural." class="pet-segment-card" target="_blank" rel="noopener">
-                        <div class="pet-icon"><img src="./assets/images/hamster.webp" alt="Hamster" loading="lazy" style="object-position: 50% 30%;"></div>
+                        <div class="pet-icon"><img src="./assets/images/hamster.webp" alt="Hamster" loading="lazy" width="64" height="64" style="object-position: 50% 30%;"></div>
                         <h3>Hamster / Roedores</h3>
                         <span class="pet-tag">Mamíferos</span>
                     </a>
                     <a href="https://wa.me/5515981098418?text=Olá!%20Tenho%20um%20Ferret%20e%20gostaria%20de%20indicação%20de%20alimentação%20natural." class="pet-segment-card" target="_blank" rel="noopener">
-                        <div class="pet-icon"><img src="./assets/images/ferret.webp" alt="Ferret" loading="lazy" style="object-position: 55% 20%;"></div>
+                        <div class="pet-icon"><img src="./assets/images/ferret.webp" alt="Ferret" loading="lazy" width="64" height="64" style="object-position: 55% 20%;"></div>
                         <h3>Ferret</h3>
                         <span class="pet-tag">Mamíferos</span>
                     </a>
                     <a href="https://wa.me/5515981098418?text=Olá!%20Tenho%20uma%20Calopsita%20e%20gostaria%20de%20indicação%20de%20alimentação%20natural." class="pet-segment-card" target="_blank" rel="noopener">
-                        <div class="pet-icon"><img src="./assets/images/calopsita.webp" alt="Calopsita" loading="lazy" style="object-position: 40% 25%;"></div>
+                        <div class="pet-icon"><img src="./assets/images/calopsita.webp" alt="Calopsita" loading="lazy" width="64" height="64" style="object-position: 40% 25%;"></div>
                         <h3>Calopsita / Aves</h3>
                         <span class="pet-tag">Aves</span>
                     </a>
@@ -373,7 +367,7 @@
         <section class="about">
             <div class="about-content">
                 <div class="about-image">
-                    <img loading="lazy" src="./assets/images/raissa-nova.webp" alt="Raíssa - Proprietária Ecotenébrios" class="raissa-photo">
+                    <img loading="lazy" src="./assets/images/raissa-nova.webp" alt="Raíssa - Proprietária Ecotenébrios" class="raissa-photo" width="400" height="400">
                 </div>
                 <div class="about-text">
                     <h2>Manejo Artesanal de Alimentação Viva e Desidratada</h2>
@@ -391,19 +385,19 @@
             <h2>Produtos de Nutrição e Insetos Alimentícios</h2>
             <div class="products-gallery">
                 <div class="product-card">
-                    <img loading="lazy" src="./assets/images/produto-1.webp" alt="Tenébrio Vivo" class="product-image">
+                    <img loading="lazy" src="./assets/images/produto-1.webp" alt="Tenébrio Vivo" class="product-image" width="400" height="250">
                     <h3>Tenébrio Vivo</h3>
                     <p>Proteína viva e completa para nutrição máxima</p>
                     <a href="https://wa.me/5515981098418?text=Gostaria%20de%20saber%20mais%20sobre%20Tenébrio%20Vivo" class="btn btn-secondary" target="_blank" rel="noopener">Consultar</a>
                 </div>
                 <div class="product-card">
-                    <img loading="lazy" src="./assets/images/produto-2.webp" alt="Tenébrio Desidratado" class="product-image">
+                    <img loading="lazy" src="./assets/images/produto-2.webp" alt="Tenébrio Desidratado" class="product-image" width="400" height="250">
                     <h3>Tenébrio Desidratado</h3>
                     <p>Armazenamento fácil, proteína concentrada</p>
                     <a href="https://wa.me/5515981098418?text=Gostaria%20de%20saber%20mais%20sobre%20Tenébrio%20Desidratado" class="btn btn-secondary" target="_blank" rel="noopener">Consultar</a>
                 </div>
                 <div class="product-card">
-                    <img loading="lazy" src="./assets/images/produto-3.webp" alt="Minhoca Californiana" class="product-image">
+                    <img loading="lazy" src="./assets/images/produto-3.webp" alt="Minhoca Californiana" class="product-image" width="400" height="250">
                     <h3>Minhoca Californiana</h3>
                     <p>Nutrição rica em cálcio e gorduras boas</p>
                     <a href="https://wa.me/5515981098418?text=Gostaria%20de%20saber%20mais%20sobre%20Minhoca%20Californiana" class="btn btn-secondary" target="_blank" rel="noopener">Consultar</a>
@@ -418,7 +412,7 @@
                 <div class="blog-grid">
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/thumbnail_calopsita_frutas.webp" alt="Calopsita pode comer melão, melancia, kiwi, mexerica, alface ou abacate?" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/thumbnail_calopsita_frutas.webp" alt="Calopsita pode comer melão, melancia, kiwi, mexerica, alface ou abacate?" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Guia</span>
@@ -429,7 +423,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/capa_alimentacao_natural_pets_exoticos.webp" alt="Guia de Alimentação Natural para Pets Exóticos: Nutrição e Bem-Estar" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/capa_alimentacao_natural_pets_exoticos.webp" alt="Guia de Alimentação Natural para Pets Exóticos: Nutrição e Bem-Estar" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Destaque</span>
@@ -440,7 +434,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/rotina_alimentacao_passaros.webp" alt="Proteína Animal para Aves: O segredo para uma postura forte e muda de penas saudável" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/rotina_alimentacao_passaros.webp" alt="Proteína Animal para Aves: O segredo para uma postura forte e muda de penas saudável" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Aves</span>
@@ -451,7 +445,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/capa_enriquecimento_ambiental.webp" alt="Enriquecimento Ambiental Alimentar: Como combater o estresse em répteis e pequenos mamíferos" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/capa_enriquecimento_ambiental.webp" alt="Enriquecimento Ambiental Alimentar: Como combater o estresse em répteis e pequenos mamíferos" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Bem-estar</span>
@@ -462,7 +456,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/capa_conservar_tenebrios.webp" alt="Como conservar tenébrios vivos em casa sem medo: Guia de Armazenamento" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/capa_conservar_tenebrios.webp" alt="Como conservar tenébrios vivos em casa sem medo: Guia de Armazenamento" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Manejo</span>
@@ -473,7 +467,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/capa_gecko_pogona_instinto.webp" alt="Gecko ou Pogona sem comer? Como o instinto de caça ativa o apetite dos répteis" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/capa_gecko_pogona_instinto.webp" alt="Gecko ou Pogona sem comer? Como o instinto de caça ativa o apetite dos répteis" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Comportamento</span>
@@ -484,7 +478,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/thumbnail_tenebrio_exoticos.webp" alt="Tenébrio para pets exóticos: o que é, para que serve e como usar na dieta" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/thumbnail_tenebrio_exoticos.webp" alt="Tenébrio para pets exóticos: o que é, para que serve e como usar na dieta" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Nutrição</span>
@@ -495,7 +489,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/thumbnail_repteis.webp" alt="Alimentação natural para répteis: guia por espécie" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/thumbnail_repteis.webp" alt="Alimentação natural para répteis: guia por espécie" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Guia</span>
@@ -506,7 +500,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/thumbnail_passaros.webp" alt="Alimentação natural para pássaros exóticos" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/thumbnail_passaros.webp" alt="Alimentação natural para pássaros exóticos" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Guia</span>
@@ -517,7 +511,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/thumbnail_roedores.webp" alt="Alimentação natural para roedores exóticos" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/thumbnail_roedores.webp" alt="Alimentação natural para roedores exóticos" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Guia</span>
@@ -528,7 +522,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/thumbnail_diferencas_nutricionais.webp" alt="Larvas de tenébrio: diferenças nutricionais" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/thumbnail_diferencas_nutricionais.webp" alt="Larvas de tenébrio: diferenças nutricionais" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Nutrição</span>
@@ -539,7 +533,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/thumbnail_onde_comprar.webp" alt="Onde comprar tenébrio vivo para pets exóticos" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/thumbnail_onde_comprar.webp" alt="Onde comprar tenébrio vivo para pets exóticos" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Guia</span>
@@ -550,7 +544,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/thumbnail_frutas_vegetais.webp" alt="Frutas e vegetais seguros para pets exóticos" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/thumbnail_frutas_vegetais.webp" alt="Frutas e vegetais seguros para pets exóticos" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Guia</span>
@@ -561,7 +555,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/thumbnail_suplementacao.webp" alt="Suplementação para pets exóticos: guia completo" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/thumbnail_suplementacao.webp" alt="Suplementação para pets exóticos: guia completo" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Guia</span>
@@ -572,7 +566,7 @@
                     </article>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/thumbnail_alimentos_proibidos.webp" alt="Alimentos proibidos para pets exóticos: tabela completa" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/thumbnail_alimentos_proibidos.webp" alt="Alimentos proibidos para pets exóticos: tabela completa" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Saúde</span>
@@ -582,7 +576,7 @@
                         </div>
                     <article class="blog-card">
                         <div class="blog-card-image" style="overflow: hidden; display: block; height: 180px;">
-                            <img loading="lazy" src="./assets/images/capa_conservar_tenebrios.webp" alt="Como criar tenébrio em casa: guia completo passo a passo" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img loading="lazy" src="./assets/images/capa_conservar_tenebrios.webp" alt="Como criar tenébrio em casa: guia completo passo a passo" width="400" height="225" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Manejo</span>
@@ -690,6 +684,21 @@
             <p>&copy; 2024 Ecotenébrios. Todos os direitos reservados.</p>
         </div>
     </footer>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,n.arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1006621321781390');
+fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1006621321781390&ev=PageView&noscript=1"/>
+</noscript>
 <script>
 function toggleFaq(element) {
     const faqItem = element.closest('.faq-item');

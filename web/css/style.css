@@ -609,7 +609,7 @@ a:hover {
     align-items: center;
     font-size: var(--font-size-base);
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
     transition: var(--transition);
 }
 
@@ -763,14 +763,14 @@ a:hover {
 }
 
 .footer-section a {
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
     font-weight: 600;
 }
 
 .footer-bottom {
     text-align: center;
     font-size: 14px;
-    color: #888;
+    color: var(--color-text-muted);
     max-width: 1200px;
     margin: 0 auto;
     padding-top: var(--spacing-md);
@@ -1197,7 +1197,7 @@ a:hover {
 }
 
 .shipping-tag {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
     color: white;
     font-size: 13px;
     font-weight: 700;
@@ -1205,7 +1205,7 @@ a:hover {
     border-radius: 30px;
     margin-top: 8px;
     letter-spacing: 0.05em;
-        animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
 }
 
 .shipping-tag .ph {
