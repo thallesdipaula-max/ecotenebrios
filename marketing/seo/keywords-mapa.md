@@ -92,8 +92,10 @@ Legenda ação: **O** = otimizar página existente · **C** = criar conteúdo ·
 | farinha de tenébrio para ração | B2B | ⚠️ | — | F | 🟢 |
 | tenébrio para casa de ração e pet shop | B2B | ⚠️ | — | F (estratégia atacado) | 🟢 |
 | fornecedor tenébrio atacado | B2B | ✅ | — | F | 🟢 |
-| comprar tenébrio [cidade] | local | ⚠️ | — | F (quando GMB ativo) | 🟢 |
-| entrega de tenébrio vivo perto de mim | local | ⚠️ | — | F | 🟢 |
+| comprar tenébrio [Tatuí/Sorocaba/Boituva/Itapetininga] | local | ✅ (nicho vago) | entrega-tatui-e-regiao | O | 🔴 |
+| entrega de tenébrio vivo perto de mim | local | ⚠️ | entrega-tatui-e-regiao (variação "na região") | O | 🔴 |
+| tenébrio em [cidade da região] | local | ✅ (nicho vago) | entrega-tatui-e-regiao | O | 🔴 |
+| minhocas em [cidade da região] | local | ✅ (nicho vago) | entrega-tatui-e-regiao | O | 🟡 |
 
 ### Topo de funil
 | Keyword | Intenção | Validado? | Cobertura | Ação | Prio |
@@ -117,6 +119,11 @@ Legenda ação: **O** = otimizar página existente · **C** = criar conteúdo ·
 5. **Aquarismo — pilar entry Oscar** (fit premium sustenta frete): ✅ feita (`web/blog/alimento-vivo-peixe-oscar/` + folha `10-socrates-aquarismo.md`). Subseções aruanã/peixes predadores/tenébrio gigante; contraponto honesto quitina 15% tilápia. Bônus: `melhor-isca-viva-para-pesca-em-pesqueiro` ✅ publicado a pedido do usuário
 6. **Product schema nas 3 ofertas da home** (Kit Premium já é produto; matrizes + desidratado)
 7. ~~Snippet "quantos tenébrios dar" (lista) dentro do cluster aves de canto~~ — ✅ coberto na tabela do pilar `tenebrio-para-aves-de-canto`
+
+**Rodada 3 — SEO local Tatuí/região (12/09):**
+- **R3.1 Mercado local está VAGO** (validação real): nenhum fornecedor de tenébrios/minhocas ranqueia em Tatuí/Sorocaba/Boituva/Itapetininga — SERP mostra só vendedores de longe (MF Rural, ML, BA/RJ). Página `entrega-tatui-e-regiao` otimizada: `geo` + `openingHours` no schema, title/meta com Sorocaba/Itapetininga/Boituva, bloco "local vs longe", +2 FAQs (schema + visíveis)
+- **R3.2 GMB = interruptor da busca local** — executar `gmb-tatui-checklist.md` (ficha + meta 10 avaliações/60 dias). Mercado vago: a ficha sozinha captura o pack local
+- **R3.3 Parcerias locais** — Center Cão + Stars Pet (adição do nicho exótico/aves em loja que hoje só atende cão/gato). Roteiro: `parcerias-tatui-regiao.md`; anúncios: `anuncios-tatui-regiao.md`
 
 **Futuro (decisão explícita de expansão):**
 8. Pesca/isqueiro — **F mantido**: coró lidera o mercado de isca; entry point fica no aquarismo premium
