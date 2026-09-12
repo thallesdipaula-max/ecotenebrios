@@ -109,14 +109,14 @@ Legenda ação: **O** = otimizar página existente · **C** = criar conteúdo ·
 
 **Agora (semana 1):**
 1. **Frass (CONTEÚDO EDUCATIVO)** — ✅ arte criada (`web/blog/frass-de-tenebrio-adubo/`) + folha `09-socrates-frass.md`. **Sem oferta** (não vendemos adubos). Requisitos cumpridos: contraponto da quitina, FAQ schema, NPK real, funil pra tenébrios/minhocas. Próximo: monitorar GEO/GSC
-2. Criar cluster aves de canto (pilar + trinca-ferro + curió) — planejado na sessão anterior
+2. **Cluster aves de canto** — ✅ criado em sessão anterior e agora 100% conectado: pilar `tenebrio-para-aves-de-canto` (nota EFSA 2021 + aviso IBAMA adicionados) + artigos `tenebrio-para-trinca-ferro`, `tenebrio-para-curio`, `proteina-animal-para-aves-reproducao`. Cards na home (29d8bc). Snippet "quantos tenébrios dar" coberto na tabela do pilar (item 7 ✅)
 3. Otimizar `onde-comprar-tenebrio-vivo` para "comprar tenébrio vivo" + variantes locais
 4. Incluir **Zophobas morio** no artigo diferenças nutricionais (comum × gigante)
 
 **Semana 2:**
-5. **Aquarismo — pilar entry Oscar** (fit premium sustenta frete): ✅ folha `10-socrates-aquarismo.md` criada (keyword "alimento vivo peixe oscar"; subseções aruanã, peixes predadores, tenébrio gigante; contraponto honesto da quitina 15% da tilápia). **Próximo:** criar `web/blog/alimento-vivo-peixe-oscar/`
-6. Product schema nas 3 ofertas da home (Kit Premium já é produto; matrizes + desidratado)
-7. Snippet "quantos tenébrios dar" (lista) dentro do cluster aves de canto
+5. **Aquarismo — pilar entry Oscar** (fit premium sustenta frete): ✅ feita (`web/blog/alimento-vivo-peixe-oscar/` + folha `10-socrates-aquarismo.md`). Subseções aruanã/peixes predadores/tenébrio gigante; contraponto honesto quitina 15% tilápia. Bônus: `melhor-isca-viva-para-pesca-em-pesqueiro` ✅ publicado a pedido do usuário
+6. **Product schema nas 3 ofertas da home** (Kit Premium já é produto; matrizes + desidratado)
+7. ~~Snippet "quantos tenébrios dar" (lista) dentro do cluster aves de canto~~ — ✅ coberto na tabela do pilar `tenebrio-para-aves-de-canto`
 
 **Futuro (decisão explícita de expansão):**
 8. Pesca/isqueiro — **F mantido**: coró lidera o mercado de isca; entry point fica no aquarismo premium
