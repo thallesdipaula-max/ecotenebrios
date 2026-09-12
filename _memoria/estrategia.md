@@ -8,6 +8,18 @@
 
 Crescimento - foco em alcance e autoridade. Dois gargalos principais: logística (frete) e visibilidade (seguidores que engajam).
 
+## Estratégia de vendas (atual)
+
+**Dupla via:** venda em **Tatuí e região** (entrega própria, sem frete caro — ataca o gargalo logístico) **+ continuar entregando em todo o Brasil** (envio climatizado, frete grátis no Kit Premium).
+
+Frentes locais ativadas:
+1. **Página local no site** `entrega-tatui-e-regiao/` (cidades atendidas, WhatsApp, tabela de prazos) — ✅ publicada
+2. **GMB (Google Meu Negócio)** — checklist em `marketing/seo/gmb-tatui-checklist.md` (ação manual: criar ficha + avaliações)
+3. **Parcerias locais** — roteiro em `comercial/parcerias-tatui-regiao.md` (pet shops, agropecuárias, pesca, aves)
+4. **Anúncios locais** — brief em `marketing/seo/anuncios-tatui-regiao.md` (Meta raio 15-30km + Google exact-local)
+
+Quando GMB tiver avaliações, as keywords locais ("comprar tenébrio [cidade]", "perto de mim") passam de F para O no mapa.
+
 ## Prioridade principal
 
 Aumentar visibilidade no Instagram e engajamento. Planejamento de postagens é uma tarefa semanal que pode ser automatizada/otimizada.
@@ -18,6 +30,7 @@ Aumentar visibilidade no Instagram e engajamento. Planejamento de postagens é u
 2. **Imediato:** Automatizar planejamento de conteúdo semanal (skill `/planejar-instagram`)
 3. **Curto prazo:** Carrosséis educativos + SEO para atração orgânica
 4. **Médio prazo:** Explorar anúncios pagos pra aumentar alcance (frete segue como gargalo, mas visibilidade é primeira alavanca)
+5. **NOVO:** Ativar venda local em Tatuí e região (GMB, parcerias, anúncios locais, entrega própria) — sem abandonar o nacional
 
 ## Contexto com prazo
 
