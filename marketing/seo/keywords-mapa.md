@@ -108,18 +108,13 @@ Legenda ação: **O** = otimizar página existente · **C** = criar conteúdo ·
 ## 3. Priorização de execução (rodada 2 — Sócrates)
 
 **Agora (semana 1):**
-1. **Frass (CONTEÚDO EDUCATIVO)** — **sem oferta de produto** (não vendemos adubos). Salvar em `marketing/seo/09-socrates-frass.md`. Funil: quem cria/horta entende o ciclo fechado → conhece a Ecotenébrios. Requisitos de conteúdo:
-   - Contraponto da quitina como **entidade** (pilar 6 — E-E-A-T): seção dedicada "Quitina no frass: benefício ou mito?" com dados reais (EFSA, estudos) — nenhum concorrente faz isso (information gain puro)
-   - FAQ schema com pergunta: "O frass de tenébrio contém quitina? É bom?" — formato 40-60 palavras
-   - H2: "O que é frass e como ele funciona" (H3: "Composição química — NPK e quiota de quitina")
-   - Meta description com keyword "frass de tenébrio" no início
-   - Links internos: apontar para artigo de diferenças nutricionais (cluster raiz)
+1. **Frass (CONTEÚDO EDUCATIVO)** — ✅ arte criada (`web/blog/frass-de-tenebrio-adubo/`) + folha `09-socrates-frass.md`. **Sem oferta** (não vendemos adubos). Requisitos cumpridos: contraponto da quitina, FAQ schema, NPK real, funil pra tenébrios/minhocas. Próximo: monitorar GEO/GSC
 2. Criar cluster aves de canto (pilar + trinca-ferro + curió) — planejado na sessão anterior
 3. Otimizar `onde-comprar-tenebrio-vivo` para "comprar tenébrio vivo" + variantes locais
 4. Incluir **Zophobas morio** no artigo diferenças nutricionais (comum × gigante)
 
 **Semana 2:**
-5. **Aquarismo — pilar entry Oscar** (fit premium sustenta frete): criar `09-socrates-aquarismo.md` — keyword "alimento vivo peixe oscar". Subseções: aruanã, peixes predadores. Entity tagging: *Astronotus ocellatus*, Aruanã, insetos vivos para aquarismo
+5. **Aquarismo — pilar entry Oscar** (fit premium sustenta frete): ✅ folha `10-socrates-aquarismo.md` criada (keyword "alimento vivo peixe oscar"; subseções aruanã, peixes predadores, tenébrio gigante; contraponto honesto da quitina 15% da tilápia). **Próximo:** criar `web/blog/alimento-vivo-peixe-oscar/`
 6. Product schema nas 3 ofertas da home (Kit Premium já é produto; matrizes + desidratado)
 7. Snippet "quantos tenébrios dar" (lista) dentro do cluster aves de canto
 
@@ -135,4 +130,6 @@ Legenda ação: **O** = otimizar página existente · **C** = criar conteúdo ·
 - **GEO mensal**: testar "tenébrio para curió", "quantos tenébrios dar pro trinca-ferro", "adubo de tenébrio", "frass de tenébrio faz bem?", "quitina no frass é ruim?" em ChatGPT/Perplexity/Gemini → registrar se a Ecotenébrios é citada; a pergunta sobre quitina é a mais valiosa (quem pergunta já está quase comprando)
 - **Google Trends**: confirmar volume relativo das 3 prioridades antes de escrever (confirmação rápida) — volumes exatos exigem ferramentas pagas (estimativa honesta)
 
-**Próximo passo sugerido:** "Rodada 2 aplicada. Começar executando pela página do **frass** (quick win, margem ~100%, contraposto da quitina coberto como requisito E-E-A-T) → depois o cluster de aves de canto → depois o pilar de aquarismo entry Oscar. Quer que eu gere a folha `09-socrates-frass.md` (prompts 1, 2, 3, 4, 8 do Sócrates)?"
+**Próximo passo sugerido:** "Rodada 2 em execução: **frass entregue** (educativo, sem oferta) → **folha do pilar aquarismo criada**. Próximo: escrever o artigo `alimento-vivo-peixe-oscar` (entry Oscar) e pedir a capa IA. Quer que eu siga?"
+
+**Veredito pesca (Sócrates, com base real):** "tenébrio gigante para peixes predadores" = **subseção** do pilar aquarismo (não artigo avulso); "isca de tenébrio para tilápia" e "melhor isca viva pesqueiro" = **F mantido** (SERP dominada por receitas culinárias/massinha; coró lidera; cliente não-premium não absorve frete). Detalhe: "isca de tilápia" em SERP é majoritariamente receita de comida — intenção contaminada.
