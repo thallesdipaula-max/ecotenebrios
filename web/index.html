@@ -20,6 +20,7 @@
     <meta property="og:description" content="Garanta tenébrios vivos, desidratados e minhocas de manejo 100% artesanal para seu réptil, ave ou roedor. Enviamos com segurança para todo o Brasil!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ecotenebrios.com.br">
+    <meta property="og:locale" content="pt_BR">
     <meta property="og:image" content="https://ecotenebrios.com.br/assets/images/logo.webp">
 
     <!-- Twitter Meta Tags -->
@@ -51,10 +52,15 @@
       "@type": "LocalBusiness",
       "name": "Ecotenébrios",
       "image": "https://ecotenebrios.com.br/assets/images/logo.webp",
+      "logo": "https://ecotenebrios.com.br/assets/images/logo.webp",
       "@id": "https://ecotenebrios.com.br",
       "url": "https://ecotenebrios.com.br",
       "telephone": "+5515981098418",
       "priceRange": "$$",
+      "founder": {
+        "@type": "Person",
+        "name": "Raíssa"
+      },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Tatuí",
@@ -78,8 +84,60 @@
         "opens": "09:00",
         "closes": "18:00"
       },
+      "areaServed": "Brasil",
+      "knowsAbout": [
+        "Tenebrio molitor",
+        "Tenébrio vivo",
+        "Tenébrio desidratado",
+        "Minhoca californiana",
+        "Alimentação natural para pets exóticos",
+        "Gut loading",
+        "Répteis",
+        "Aves exóticas",
+        "Roedores exóticos"
+      ],
       "sameAs": [
         "https://instagram.com/ecotenebrio.tenebrios"
+      ]
+    }
+    </script>
+
+    <!-- SEO: Dados Estruturados Google (Schema.org Organization & WebSite) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://ecotenebrios.com.br/#org",
+          "name": "Ecotenébrios",
+          "url": "https://ecotenebrios.com.br/",
+          "logo": "https://ecotenebrios.com.br/assets/images/logo.webp",
+          "image": "https://ecotenebrios.com.br/assets/images/logo.webp",
+          "sameAs": [
+            "https://instagram.com/ecotenebrio.tenebrios"
+          ],
+          "founder": {
+            "@type": "Person",
+            "name": "Raíssa"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+5515981098418",
+            "contactType": "customer service",
+            "areaServed": "BR",
+            "availableLanguage": "Portuguese"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ecotenebrios.com.br/#website",
+          "url": "https://ecotenebrios.com.br/",
+          "name": "Ecotenébrios",
+          "publisher": {
+            "@id": "https://ecotenebrios.com.br/#org"
+          }
+        }
       ]
     }
     </script>
@@ -194,7 +252,7 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h1 class="headline">Alimentação Natural Premium para Pets Exóticos</h1>
+                <h1 class="headline">Alimentação Natural para Pets Exóticos — Tenébrios Vivos, Minhocas e Larvas</h1>
 
                 <!-- Hero Image -->
                 <div class="hero-image-container">
@@ -220,7 +278,7 @@
         </section>
 
         <!-- Premium Offer Section -->
-        <section class="premium-offer-section">
+        <section class="premium-offer-section" id="kit-premium">
             <div class="offer-container offer-horizontal offer-flagship">
                 <div class="offer-image-col">
                     <img src="./assets/images/oferta-kit-premium.webp" alt="Kit Premium Ecotenébrios" class="offer-product-img" loading="lazy" width="480" height="480">
