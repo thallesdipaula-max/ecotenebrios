@@ -19,7 +19,7 @@
 
 **Entrega:** região de Tatuí com entrega própria (mesmo dia/dia seguinte; combinar no WhatsApp) + envio climatizado para todo o Brasil. Cidades da região: Boituva, Cerquilho, Cesário Lange, Porangaba, Alambari, Quadra, Torre de Pedra, Capela do Alto, Sarapuí, Sorocaba, Tietê, Laranjal Paulista, Itapetininga, São Miguel Arcanjo, Angatuba. Ver `entrega-tatui-e-regiao/`.
 
-**Ferramentas:** Instagram (@ecotenebrio.tenebrios), WhatsApp, produção artesanal
+**Ferramentas:** Instagram (@ecotenebrio.tenebrios), WhatsApp, produção artesanal, **Google Business Profile (GMB) ativo** (Tatuí/SP)
 
 **Principais entregas:** 
 - Tenébrios vivos e desidratados

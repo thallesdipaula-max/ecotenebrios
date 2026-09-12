@@ -13,12 +13,12 @@ Crescimento - foco em alcance e autoridade. Dois gargalos principais: logística
 **Dupla via:** venda em **Tatuí e região** (entrega própria, sem frete caro — ataca o gargalo logístico) **+ continuar entregando em todo o Brasil** (envio climatizado, frete grátis no Kit Premium).
 
 Frentes locais ativadas:
-1. **Página local no site** `entrega-tatui-e-regiao/` (cidades atendidas, WhatsApp, tabela de prazos) — ✅ publicada
-2. **GMB (Google Meu Negócio)** — checklist em `marketing/seo/gmb-tatui-checklist.md` (ação manual: criar ficha + avaliações)
+1. **Página local no site** `entrega-tatui-e-regiao/` (cidades atendidas, WhatsApp, tabela de prazos) — ✅ publicada e otimizada (rodada Sócrates local: geo+horário no schema, title/meta Sorocaba-Boituva-Itapetininga, bloco "local vs longe", +2 FAQs). Diagnóstico: **mercado local está vago** — nenhum fornecedor de tenébrios/minhocas ranqueia na região (SERP só mostra vendedores de longe)
+2. **GMB (Google Meu Negócio)** — ✅ **FICHA ATIVA há algumas semanas** (confirmado 12/09/2026). Próximo passo: pedir avaliações (meta 10 nos primeiros 60 dias), posts semanais na ficha e monitorar "Desempenho" no business.google.com
 3. **Parcerias locais** — roteiro em `comercial/parcerias-tatui-regiao.md` (pet shops, agropecuárias, pesca, aves)
 4. **Anúncios locais** — brief em `marketing/seo/anuncios-tatui-regiao.md` (Meta raio 15-30km + Google exact-local)
 
-Quando GMB tiver avaliações, as keywords locais ("comprar tenébrio [cidade]", "perto de mim") passam de F para O no mapa.
+Keywords locais já estão como **O** no mapa (cobertura = página local). **GMB já está ativo** — agora é o canal que captura o pack local; acelerar com avaliações + posts na ficha.
 
 ## Prioridade principal
 

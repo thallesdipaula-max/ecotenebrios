@@ -2,19 +2,18 @@
 
 **Objetivo:** aparecer no Google Maps local (`tenébrio em Tatuí`, `alimentação natural para pets Tatuí`, `minhocas Tatuí`) e capturar cliente de busca local + avaliações.
 
-> A verificação da ficha é feita **manualmente pela Raíssa** no Google Business Profile (business.google.com). Este checklist é o roteiro + textos prontos.
+> ✅ **Status (12/09/2026): FICHA CRIADA E ATIVA** há algumas semanas (confirmado pela Raíssa). Os itens abaixo funcionam como **auditoria rápida** + as próximas ações (avaliações, posts, monitoramento).
 
 ---
 
-## 1. Criar/verificar a ficha
+## 1. Auditoria da ficha (confirmar que os campos estão preenchidos)
 
-1. Acessar `business.google.com` → "Adicionar empresa" → **Ecotenébrios**
-2. Categoria principal: **"Loja de alimentos para animais"** ou **"Fornecedor de animais de estimação"** (testar qual valida) — a categoria secundária: **"Serviços de entrega de alimentos"**
-3. Não colocar endereço público se a produção é em casa (opera em Tatuí entregando). Usar a opção **"Tenho uma área de serviço e não atendo clientes no meu endereço"** → isso evita exibir o endereço residencial.
-4. Área de serviço (Zonas/áreas): **Tatuí, Boituva, Cerquilho, Cesário Lange, Porangaba, Alambari, Quadra, Torre de Pedra, Capela do Alto, Sarapuí, Sorocaba, Itapetininga, Tietê, Laranjal Paulista, São Miguel Arcanjo, Angatuba**
-5. Telefone: **+55 15 98109-8418** (WhatsApp) — se possível usar número separado do WhatsApp na ficha para não dividir o app.
-6. Horário de funcionamento: preencher (ex.: Seg–Sex 9h–18h, Sáb 9h–13h). Horário preenchido = melhor ranqueamento local.
-7. Sites: adicionar `https://ecotenebrios.com.br/entrega-tatui-e-regiao/` como página de destino (a página local é a âncora perfeita).
+1. Categoria principal: **"Loja de alimentos para animais"** ou **"Fornecedor de animais de estimação"** — secundária: **"Serviços de entrega de alimentos"**
+2. Endereço residencial **não exposto** (modal "área de serviço" / entrega, sem atender no endereço)
+3. Área de serviço (Zonas/áreas): **Tatuí, Boituva, Cerquilho, Cesário Lange, Porangaba, Alambari, Quadra, Torre de Pedra, Capela do Alto, Sarapuí, Sorocaba, Itapetininga, Tietê, Laranjal Paulista, São Miguel Arcanjo, Angatuba**
+4. Telefone: **+55 15 98109-8418** (WhatsApp) — se possível usar número separado do WhatsApp na ficha para não dividir o app.
+5. Horário de funcionamento: preencher (ex.: Seg–Sex 9h–18h, Sáb 9h–13h). Horário preenchido = melhor ranqueamento local.
+6. Sites: adicionar `https://ecotenebrios.com.br/entrega-tatui-e-regiao/` como página de destino (a página local é a âncora perfeita).
 
 ## 2. Descrição do perfil (texto pronto — ≤750 caracteres)
 
@@ -52,4 +51,4 @@
 
 ## 7. Monitoramento (mensal)
 - [ ] Ver "Desempenho" (Consultas: busca "tenébrio", "minhocas", "alimento natural" + região) → anotar no `financeiro/relatorios/`
-- [ ] Registrar no mapa de keywords: **"comprar tenébrio [cidade]" e "entrega de tenébrio vivo perto de mim" passam de F para O** quando GMB ativo com avaliações
+- ✅ Keywords locais **já são O** no mapa (página local ativa) — agora é medir o fluxo do GMB

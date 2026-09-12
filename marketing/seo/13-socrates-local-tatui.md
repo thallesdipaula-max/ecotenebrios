@@ -81,6 +81,6 @@ Alvos reais em Tatuí: **Center Cão** (pitch de gôndola exótica/avença), **S
 2. [x] **Title/meta local** com Sorocaba + Itapetininga + Boituva
 3. [x] **Bloco "local vs longe"** na página de entrega (compara frete honestamente)
 4. [x] 2 FAQs novas visíveis + schema (vantagem local; Sorocaba/Itapetininga)
-5. [ ] **GMB** = executar checklist (prioridade máxima — mercado vago). Não é editável por código: **ação manual da Raíssa**
+5. [x] **GMB** — ✅ **FICHA ATIVA** desde semanas anteriores (não era pendência). Próximo: avaliações (meta 10), posts semanais, monitorar "Desempenho"
 6. [x] Mapa keywords: variantes locais F → O
 7. [ ] Parceria: pitch Center Cão + Stars Pet (adição de nicho, não competição) — roteiro em `parcerias-tatui-regiao.md`
