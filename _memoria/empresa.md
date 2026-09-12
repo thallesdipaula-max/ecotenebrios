@@ -25,6 +25,22 @@
 - Guias de cuidados e nutrição
 - Envios para todo Brasil
 
+## Produtos vendidos
+
+- Tenébrios vivos (Kit Premium)
+- Tenébrios desidratados (50g)
+- Minhocas californianas (50un)
+- **Não vendemos:** adubos, fertilizantes, frass, substratos — somente alimentação animal.
+
+## Links de pagamento (válidos — somente estes)
+
+A página principal (`web/index.html`) é a **única fonte da verdade** dos links de pagamento. Não usar links antigos de artigos do blog.
+
+- Kit Premium (R$ 49,90) → `https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-bzfv7yiX4U-49,90`
+- 50g Tenébrios Desidratados (R$ 39,90) → `https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-HgH3GDr86l-39,90`
+- Minhocas Californianas 50un (R$ 39,90) → `https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-RCdQTtivbb-39,90`
+- WhatsApp (dúvidas/vendas diretas) → `https://wa.me/5515981098418`
+
 ## Contexto adicional
 
 Foco em qualidade premium e educação do cliente. Produção artesanal, manejo cuidadoso, estoque gerenciado com segurança.
