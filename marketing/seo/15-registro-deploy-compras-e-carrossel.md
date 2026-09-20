@@ -4,9 +4,10 @@
 > **Responsável**: Estrategista de SEO Semântico (Sócrates) & Frontend Craft  
 > **Status**: Commitado localmente no branch `main` pronto para envio  
 > **Commits Realizados**:
-> - `08c9abd`: *feat(shop): redesign premium /comprar/ checkout using naturalist workbench system*
-> - `8e74a14`: *feat(home): implement horizontal snap-scroll product carousel*
+> - `4eec359`: *feat(home): upgrade desktop carousel with floating side navigation and 3-card slide view*
 > - `7c7cfdc`: *feat(carousel): add mobile animated swipe badge and dynamic pagination dots*
+> - `8e74a14`: *feat(home): implement horizontal snap-scroll product carousel*
+> - `08c9abd`: *feat(shop): redesign premium /comprar/ checkout using naturalist workbench system*
 
 ---
 
