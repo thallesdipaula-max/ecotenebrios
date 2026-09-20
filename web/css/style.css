@@ -2884,3 +2884,63 @@ a:hover {
     background: #1ebc59;
     transform: translateY(-2px);
 }
+
+/* Indicador de Swipe no Mobile */
+.mobile-swipe-badge {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    background: #FAF8F3;
+    border: 1.5px solid var(--color-primary);
+    color: var(--color-primary-dark);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-top: 12px;
+    width: fit-content;
+    box-shadow: 0 4px 12px rgba(107, 142, 113, 0.15);
+}
+
+@media (max-width: 768px) {
+    .mobile-swipe-badge {
+        display: inline-flex;
+    }
+}
+
+.swipe-hand-anim {
+    display: inline-block;
+    animation: swipe-bounce 1.4s infinite ease-in-out;
+}
+
+@keyframes swipe-bounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(8px); }
+}
+
+/* Indicadores de Paginação (Dots) */
+.carousel-pagination-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #EAE6DC;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.carousel-dot.active {
+    width: 28px;
+    border-radius: 12px;
+    background: var(--color-primary-dark);
+    box-shadow: 0 2px 8px rgba(45, 59, 45, 0.25);
+}
