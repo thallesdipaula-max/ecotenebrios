@@ -298,13 +298,17 @@
                         <span>Deslize para o lado para ver todos os alimentos</span>
                     </div>
                 </div>
-                <div class="carousel-nav-controls">
-                    <button type="button" class="carousel-arrow-btn" onclick="scrollProductsCarousel(-1)" aria-label="Produto anterior">‹</button>
-                    <button type="button" class="carousel-arrow-btn" onclick="scrollProductsCarousel(1)" aria-label="Próximo produto">›</button>
-                </div>
             </div>
 
             <div class="products-scroll-wrapper">
+                <!-- Botões Laterais Flutuantes de Navegação (Desktop) -->
+                <button type="button" class="carousel-side-btn carousel-side-prev" onclick="scrollProductsCarousel(-1)" aria-label="Produto anterior">
+                    <span>‹</span>
+                </button>
+                <button type="button" class="carousel-side-btn carousel-side-next" onclick="scrollProductsCarousel(1)" aria-label="Próximo produto">
+                    <span>›</span>
+                </button>
+
                 <div class="products-scroll-track" id="productsCarouselTrack">
                     
                     <!-- Card 1: Kit Premium Tenébrios Vivos -->

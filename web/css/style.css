@@ -2617,44 +2617,65 @@ a:hover {
 }
 
 .carousel-nav-controls {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.carousel-arrow-btn {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #ffffff;
-    border: 1.5px solid var(--color-border);
-    color: var(--color-primary-dark);
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    user-select: none;
-}
-
-.carousel-arrow-btn:hover {
-    background: var(--color-primary-dark);
-    color: #ffffff;
-    border-color: var(--color-primary-dark);
-    transform: scale(1.05);
-}
-
-.carousel-arrow-btn:active {
-    transform: scale(0.95);
+    display: none; /* Agora usamos os botões laterais flutuantes e bolinhas */
 }
 
 .products-scroll-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    padding: 0 16px;
+}
+
+.carousel-side-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid var(--color-border);
+    color: var(--color-primary-dark);
+    font-size: 26px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+    user-select: none;
+}
+
+.carousel-side-btn:hover {
+    background: var(--color-primary-dark);
+    color: #ffffff;
+    border-color: var(--color-primary-dark);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 24px rgba(107, 142, 113, 0.3);
+}
+
+.carousel-side-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-side-prev {
+    left: -12px;
+}
+
+.carousel-side-next {
+    right: -12px;
+}
+
+@media (max-width: 768px) {
+    .products-scroll-wrapper {
+        padding: 0;
+    }
+    .carousel-side-btn {
+        display: none;
+    }
 }
 
 .products-scroll-track {
@@ -2679,12 +2700,13 @@ a:hover {
 }
 
 .product-carousel-card {
-    flex: 0 0 320px;
+    flex: 0 0 350px;
+    max-width: 350px;
     scroll-snap-align: start;
     background: #ffffff;
     border: 1.5px solid var(--color-border);
     border-radius: 18px;
-    padding: 22px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2693,10 +2715,17 @@ a:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,0.03);
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1024px) {
+    .product-carousel-card {
+        flex: 0 0 calc(33.333% - 14px);
+        max-width: calc(33.333% - 14px);
+    }
+}
+
+@media (max-width: 768px) {
     .product-carousel-card {
         flex: 0 0 85vw;
-        max-width: 330px;
+        max-width: 320px;
     }
 }
 
