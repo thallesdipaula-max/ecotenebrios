@@ -287,130 +287,126 @@
             </div>
         </section>
 
-        <!-- Premium Offer Section -->
-        <section class="premium-offer-section" id="kit-premium">
-            <div class="offer-container offer-horizontal offer-flagship">
-                <div class="offer-image-col">
-                    <img src="./assets/images/oferta-kit-premium.webp" alt="Kit Premium Ecotenébrios" class="offer-product-img" loading="lazy" width="480" height="480">
+        <!-- Seção de Produtos em Carrossel Horizontal -->
+        <section class="products-horizontal-section" id="produtos-vitrine">
+            <div class="products-carousel-header">
+                <div class="products-carousel-title-col">
+                    <h2>Nossos Alimentos Vivos e Desidratados</h2>
+                    <p>Produção artesanal com <em>Gut Loading</em> nobre, embalagem climatizada e envio para todo o Brasil.</p>
                 </div>
-                <div class="offer-content-col">
-                    <div class="offer-badge">OFERTA ESPECIAL DE ENTRADA</div>
-                    <h2 class="offer-title">Kit Premium Ecotenébrios</h2>
-                    <p class="offer-description">A melhor nutrição do mercado com a facilidade que você precisa para testar a qualidade dos nossos produtos.</p>
-
-                    <div class="offer-box">
-                        <div class="offer-details">
-                            <span class="offer-item-included">✓ 1 Pote de Tenébrios Vivos Selecionados</span>
-                            <span class="offer-item-included">✓ Substrato enriquecido de viagem</span>
-                            <span class="offer-item-included">✓ Embalagem climatizada exclusiva</span>
-                            <span class="offer-item-included">✓ Garantia de chegada 100% ativos</span>
-                        </div>
-                        <div class="offer-price-area">
-                            <span class="price-label">Por apenas:</span>
-                            <div class="price-value">
-                                <span class="currency">R$</span>
-                                <span class="amount">49</span>
-                                <span class="cents">,90</span>
-                            </div>
-                            <div class="shipping-tag"><i class="ph ph-truck"></i> FRETE GRÁTIS</div>
-                        </div>
-                    </div>
-
-                    <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-bzfv7yiX4U-49,90" class="btn btn-primary btn-offer btn-checkout" target="_blank" rel="noopener" data-product="Kit Premium Ecotenébrios" data-value="49.90">
-                        <i class="ph ph-shopping-cart"></i>
-                        Garantir Meu Kit com Frete Grátis
-                    </a>
-                    <p class="offer-fineprint">Oferta por tempo limitado. O pagamento é processado de forma 100% segura pelo Mercado Pago. Após o pagamento, entraremos em contato via WhatsApp para confirmar o endereço de entrega.</p>
+                <div class="carousel-nav-controls">
+                    <button type="button" class="carousel-arrow-btn" onclick="scrollProductsCarousel(-1)" aria-label="Produto anterior">‹</button>
+                    <button type="button" class="carousel-arrow-btn" onclick="scrollProductsCarousel(1)" aria-label="Próximo produto">›</button>
                 </div>
             </div>
-        </section>
 
-        <!-- Desidratados Offer Section -->
-        <section class="premium-offer-section">
-            <div class="offer-container offer-horizontal">
-                <div class="offer-image-col">
-                    <img src="./assets/images/oferta-tenebrios-desidratados.webp" alt="Tenébrios Desidratados 50g" class="offer-product-img" loading="lazy" width="480" height="480">
-                </div>
-                <div class="offer-content-col">
-                    <div class="offer-badge offer-badge--blue">COMPRA SEGURA</div>
-                    <h2 class="offer-title">50g Tenébrios Desidratados</h2>
-                    <p class="offer-description">Proteína concentrada (53% de proteína bruta), armazenamento em temperatura ambiente e validade prolongada. Ideal para criadores e tutores que buscam praticidade.</p>
-
-                    <div class="offer-box">
-                        <div class="offer-details">
-                            <span class="offer-item-included">✓ 50g de Tenébrios Desidratados Selecionados</span>
-                            <span class="offer-item-included">✓ Armazenamento em temperatura ambiente</span>
-                            <span class="offer-item-included">✓ Validade de 6 meses</span>
-                            <span class="offer-item-included">✓ Embalagem hermética com zíper</span>
+            <div class="products-scroll-wrapper">
+                <div class="products-scroll-track" id="productsCarouselTrack">
+                    
+                    <!-- Card 1: Kit Premium Tenébrios Vivos -->
+                    <article class="product-carousel-card card-featured">
+                        <span class="carousel-card-badge">⭐ Mais Vendido</span>
+                        <div class="carousel-card-img-wrap">
+                            <img src="./assets/images/oferta-kit-premium.webp" alt="Kit Premium Tenébrios Vivos" loading="lazy" width="480" height="480">
                         </div>
-                        <div class="offer-price-area">
-                            <span class="price-label">Por apenas:</span>
-                            <div class="price-value">
-                                <span class="currency">R$</span>
-                                <span class="amount">39</span>
-                                <span class="cents">,90</span>
+                        <div>
+                            <h3 class="carousel-card-title">Kit Premium Tenébrios Vivos</h3>
+                            <div class="carousel-card-price">
+                                <span class="main-price">R$ 49,90</span>
+                                <span class="sub-price">/ com frete grátis</span>
                             </div>
-                            <div class="shipping-tag"><i class="ph ph-truck"></i> FRETE GRÁTIS SP</div>
+                            <ul class="carousel-specs-list">
+                                <li>✨ Larvas vivas ativas e selecionadas</li>
+                                <li>📦 Embalagem térmica ventilada exclusiva</li>
+                                <li>🚚 <strong>Frete Grátis</strong> para todo o Brasil</li>
+                                <li>🛡️ Garantia de chegada 100% vivos</li>
+                            </ul>
                         </div>
-                    </div>
-
-                    <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-HgH3GDr86l-39,90" class="btn btn-primary btn-offer btn-checkout" target="_blank" rel="noopener" data-product="50g Tenébrios Desidratados" data-value="39.90">
-                        <i class="ph ph-shopping-cart"></i>
-                        Garantir Meu Pote com Frete Grátis
-                    </a>
-                    <p class="offer-fineprint">Frete grátis para todo o estado de São Paulo. Consulte o frete para outras regiões.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Minhocas Offer Section -->
-        <section class="premium-offer-section">
-            <div class="offer-container offer-horizontal offer-horizontal--reverse">
-                <div class="offer-image-col">
-                    <img src="./assets/images/oferta-minhocas.webp" alt="Minhocas Californianas" class="offer-product-img" loading="lazy" width="480" height="480">
-                </div>
-                <div class="offer-content-col">
-                    <div class="offer-badge offer-badge--green">NOVO</div>
-                    <h2 class="offer-title">Minhocas Californianas</h2>
-                    <p class="offer-description">Nutrição rica em cálcio e gorduras boas. Cerca de 50 unidades por pote. Ideais para répteis, aves e ouriços.</p>
-
-                    <div class="offer-box">
-                        <div class="offer-details">
-                            <span class="offer-item-included">✓ Cerca de 50 Minhocas Californianas</span>
-                            <span class="offer-item-included">✓ Ricas em cálcio natural</span>
-                            <span class="offer-item-included">✓ Gut loading com vegetais frescos</span>
-                            <span class="offer-item-included">✓ Embalagem climatizada exclusiva</span>
+                        <div class="carousel-card-actions">
+                            <a href="./comprar/" class="btn-card-buy">
+                                🛒 Adicionar ao Pedido
+                            </a>
+                            <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-bzfv7yiX4U-49,90" target="_blank" rel="noopener" class="btn-card-alt btn-checkout" data-product="Kit Premium Tenébrios Vivos" data-value="49.90">
+                                Ou pagar online agora →
+                            </a>
                         </div>
-                        <div class="offer-price-area">
-                            <span class="price-label">Por apenas:</span>
-                            <div class="price-value">
-                                <span class="currency">R$</span>
-                                <span class="amount">39</span>
-                                <span class="cents">,90</span>
+                    </article>
+
+                    <!-- Card 2: Tenébrios Desidratados -->
+                    <article class="product-carousel-card">
+                        <span class="carousel-card-badge" style="background: #8E6B71;">🪶 50% Proteína</span>
+                        <div class="carousel-card-img-wrap">
+                            <img src="./assets/images/oferta-tenebrios-desidratados.webp" alt="Tenébrios Desidratados 50g" loading="lazy" width="480" height="480">
+                        </div>
+                        <div>
+                            <h3 class="carousel-card-title">Tenébrios Desidratados (50g)</h3>
+                            <div class="carousel-card-price">
+                                <span class="main-price">R$ 39,90</span>
+                                <span class="sub-price">/ pote selado 50g</span>
                             </div>
-                            <div class="shipping-tag"><i class="ph ph-truck"></i> FRETE GRÁTIS SP</div>
+                            <ul class="carousel-specs-list">
+                                <li>💪 50% de proteína nobre e digestibilidade</li>
+                                <li>🪶 Essencial na muda de penas de aves</li>
+                                <li>🕒 Validade de 6 meses (não estraga)</li>
+                                <li>✨ Pronto para servir ou misturar na ração</li>
+                            </ul>
                         </div>
-                    </div>
+                        <div class="carousel-card-actions">
+                            <a href="./comprar/" class="btn-card-buy">
+                                🛒 Adicionar ao Pedido
+                            </a>
+                            <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-HgH3GDr86l-39,90" target="_blank" rel="noopener" class="btn-card-alt btn-checkout" data-product="Tenébrios Desidratados 50g" data-value="39.90">
+                                Ou pagar online agora →
+                            </a>
+                        </div>
+                    </article>
 
-                    <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-RCdQTtivbb-39,90" class="btn btn-primary btn-offer btn-checkout" target="_blank" rel="noopener" data-product="Minhocas Californianas 50un" data-value="39.90">
-                        <i class="ph ph-shopping-cart"></i>
-                        Garantir Minhas Minhocas com Frete Grátis
-                    </a>
-                    <p class="offer-fineprint">Frete grátis para todo o estado de São Paulo. Consulte o frete para outras regiões.</p>
+                    <!-- Card 3: Minhocas Californianas -->
+                    <article class="product-carousel-card">
+                        <span class="carousel-card-badge" style="background: #4A5F4E;">🪱 Rica em Cálcio</span>
+                        <div class="carousel-card-img-wrap">
+                            <img src="./assets/images/oferta-minhocas.webp" alt="Minhocas Californianas 50 unidades" loading="lazy" width="480" height="480">
+                        </div>
+                        <div>
+                            <h3 class="carousel-card-title">Minhocas Californianas (50un)</h3>
+                            <div class="carousel-card-price">
+                                <span class="main-price">R$ 39,90</span>
+                                <span class="sub-price">/ pote com 50 unidades</span>
+                            </div>
+                            <ul class="carousel-specs-list">
+                                <li>💧 Alto teor de cálcio orgânico e umidade</li>
+                                <li>🦎 Estimula répteis seletivos (geckos)</li>
+                                <li>🐟 O petisco predileto de peixes grandes</li>
+                                <li>📦 Enviadas vivas em substrato vegetal</li>
+                            </ul>
+                        </div>
+                        <div class="carousel-card-actions">
+                            <a href="./comprar/" class="btn-card-buy">
+                                🛒 Adicionar ao Pedido
+                            </a>
+                            <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-RCdQTtivbb-39,90" target="_blank" rel="noopener" class="btn-card-alt btn-checkout" data-product="Minhocas Californianas 50un" data-value="39.90">
+                                Ou pagar online agora →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: CTA Combo Especial com Desconto -->
+                    <article class="product-carousel-card card-combo-cta">
+                        <div>
+                            <span class="combo-tag-pill">🎁 Economia Progressiva</span>
+                            <h3>Monte Seu Combo</h3>
+                            <p>Combine diferentes alimentos para o seu pet e ganhe descontos automáticos no pedido inteiro!</p>
+                            <div style="background: rgba(255,255,255,0.1); padding: 12px; border-radius: 10px; margin-bottom: 20px; font-size: 13px;">
+                                <div>✨ <strong>2 itens:</strong> 5% OFF</div>
+                                <div>🏆 <strong>3 ou mais itens:</strong> 10% OFF</div>
+                            </div>
+                        </div>
+                        <a href="./comprar/" class="btn-combo-cta">
+                            <span>Montar Meu Pedido 🛒</span>
+                        </a>
+                    </article>
+
                 </div>
-            </div>
-        </section>
-
-        <!-- Combo Banner Call to Action -->
-        <section style="max-width: 1200px; margin: 32px auto; padding: 0 var(--spacing-sm);">
-            <div style="background: linear-gradient(135deg, #FAF8F3 0%, #F0F7F4 100%); border: 2px dashed var(--color-primary); border-radius: 16px; padding: 24px; text-align: center;">
-                <h3 style="color: var(--color-primary-dark); font-size: 20px; margin-bottom: 8px;">🎁 Quer Montar um Pedido Personalizado ou Levar Mais Itens?</h3>
-                <p style="color: var(--color-text-muted); font-size: 15px; margin-bottom: 16px; max-width: 650px; margin-left: auto; margin-right: auto;">
-                    Acesse nossa página de compras exclusiva com <strong>descontos progressivos automáticos</strong>: leve 2 itens com 5% OFF ou 3+ itens com 10% OFF no pedido inteiro!
-                </p>
-                <a href="./comprar/" class="btn btn-primary" style="display: inline-flex; width: auto; padding: 12px 28px; font-weight: 700; text-decoration: none;">
-                    🛒 Abrir Montador de Pedidos (/comprar/)
-                </a>
             </div>
         </section>
 
@@ -1048,6 +1044,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Navegação do Carrossel Horizontal de Produtos
+function scrollProductsCarousel(direction) {
+    const track = document.getElementById('productsCarouselTrack');
+    if (!track) return;
+    const cardWidth = 340; // Largura do card + gap
+    track.scrollBy({
+        left: direction * cardWidth,
+        behavior: 'smooth'
+    });
+}
 </script>
 </body>
 </html>
