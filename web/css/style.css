@@ -2915,31 +2915,29 @@ a:hover {
 }
 
 .carousel-dot {
-    position: relative;
-    width: 10px;
-    height: 10px;
-    min-width: 10px;
-    min-height: 10px;
-    border-radius: 50%;
-    background: #C4BEB2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    background: transparent;
     border: none;
     padding: 0;
     cursor: pointer;
+}
+
+.carousel-dot .dot-indicator {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #A8A196;
     transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease, border-radius 0.3s ease;
 }
 
-/* Touch target acessível de 44x44px em conformidade com WCAG */
-.carousel-dot::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 44px;
-    height: 44px;
-}
-
-.carousel-dot.active {
+.carousel-dot.active .dot-indicator {
     width: 28px;
     border-radius: 12px;
     background: var(--color-primary-dark);
