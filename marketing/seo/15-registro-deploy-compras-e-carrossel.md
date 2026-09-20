@@ -4,6 +4,7 @@
 > **Responsável**: Estrategista de SEO Semântico (Sócrates) & Frontend Craft  
 > **Status**: Commitado localmente no branch `main` pronto para envio  
 > **Commits Realizados**:
+> - `d172d10`: *feat(home): elegant 3-column product grid on desktop and swipe carousel on mobile*
 > - `4eec359`: *feat(home): upgrade desktop carousel with floating side navigation and 3-card slide view*
 > - `7c7cfdc`: *feat(carousel): add mobile animated swipe badge and dynamic pagination dots*
 > - `8e74a14`: *feat(home): implement horizontal snap-scroll product carousel*
