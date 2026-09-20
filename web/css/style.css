@@ -2585,6 +2585,9 @@ a:hover {
 /* ========================================
    Carrossel Horizontal de Produtos (Home)
    ======================================== */
+/* ========================================
+   Vitrine de Produtos (Grid no Desktop / Swipe no Mobile)
+   ======================================== */
 .products-horizontal-section {
     padding: var(--spacing-xl) var(--spacing-sm);
     background: linear-gradient(180deg, #FFFFFF 0%, #FAF8F3 100%);
@@ -2595,113 +2598,60 @@ a:hover {
 
 .products-carousel-header {
     max-width: 1200px;
-    margin: 0 auto 24px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 16px;
+    margin: 0 auto 28px auto;
+    text-align: center;
 }
 
 .products-carousel-title-col h2 {
     color: var(--color-primary-dark);
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-    margin-bottom: 6px;
+    font-size: clamp(1.75rem, 3.5vw, 2.4rem);
+    margin-bottom: 8px;
     font-weight: 800;
 }
 
 .products-carousel-title-col p {
     color: var(--color-text-muted);
-    font-size: 15px;
-    margin: 0;
-}
-
-.carousel-nav-controls {
-    display: none; /* Agora usamos os botões laterais flutuantes e bolinhas */
+    font-size: 16px;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .products-scroll-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    padding: 0 16px;
 }
 
-.carousel-side-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: #ffffff;
-    border: 2px solid var(--color-border);
-    color: var(--color-primary-dark);
-    font-size: 26px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 10;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
-    user-select: none;
-}
-
-.carousel-side-btn:hover {
-    background: var(--color-primary-dark);
-    color: #ffffff;
-    border-color: var(--color-primary-dark);
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 8px 24px rgba(107, 142, 113, 0.3);
-}
-
-.carousel-side-btn:active {
-    transform: translateY(-50%) scale(0.95);
-}
-
-.carousel-side-prev {
-    left: -12px;
-}
-
-.carousel-side-next {
-    right: -12px;
-}
-
-@media (max-width: 768px) {
-    .products-scroll-wrapper {
-        padding: 0;
-    }
-    .carousel-side-btn {
-        display: none;
-    }
-}
-
+/* Trilhas Responsivas: Grid no Desktop vs Flex Swipe no Mobile */
 .products-scroll-track {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     padding: 10px 4px 24px 4px;
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-border) transparent;
+    scrollbar-width: none; /* Esconder barra feia */
 }
 
 .products-scroll-track::-webkit-scrollbar {
-    height: 6px;
+    display: none;
 }
 
-.products-scroll-track::-webkit-scrollbar-thumb {
-    background: var(--color-border);
-    border-radius: 6px;
+@media (min-width: 992px) {
+    .products-scroll-track {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        overflow: visible;
+        padding: 0;
+    }
 }
 
+/* Cards de Produtos */
 .product-carousel-card {
-    flex: 0 0 350px;
-    max-width: 350px;
+    flex: 0 0 85vw;
+    max-width: 320px;
     scroll-snap-align: start;
     background: #ffffff;
     border: 1.5px solid var(--color-border);
@@ -2715,29 +2665,24 @@ a:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,0.03);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     .product-carousel-card {
-        flex: 0 0 calc(33.333% - 14px);
-        max-width: calc(33.333% - 14px);
-    }
-}
-
-@media (max-width: 768px) {
-    .product-carousel-card {
-        flex: 0 0 85vw;
-        max-width: 320px;
+        flex: auto;
+        max-width: none;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.04);
     }
 }
 
 .product-carousel-card:hover {
     transform: translateY(-6px);
     border-color: var(--color-primary);
-    box-shadow: 0 14px 28px rgba(107, 142, 113, 0.14);
+    box-shadow: 0 16px 32px rgba(107, 142, 113, 0.16);
 }
 
 .product-carousel-card.card-featured {
     border-color: var(--color-primary);
     background: linear-gradient(180deg, #FFFFFF 0%, #FAF8F3 100%);
+    box-shadow: 0 8px 24px rgba(107, 142, 113, 0.08);
 }
 
 .carousel-card-badge {
@@ -2748,7 +2693,7 @@ a:hover {
     font-weight: 700;
     color: #ffffff;
     background: var(--color-primary-dark);
-    padding: 4px 12px;
+    padding: 5px 12px;
     border-radius: 8px;
     z-index: 2;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -2756,7 +2701,7 @@ a:hover {
 
 .carousel-card-img-wrap {
     width: 100%;
-    height: 180px;
+    height: 190px;
     border-radius: 12px;
     overflow: hidden;
     background: #FAF8F3;
@@ -2775,10 +2720,11 @@ a:hover {
 }
 
 .carousel-card-title {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 800;
     color: var(--color-text);
     margin-bottom: 6px;
+    line-height: 1.3;
 }
 
 .carousel-card-price {
@@ -2789,37 +2735,39 @@ a:hover {
 }
 
 .carousel-card-price .main-price {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 800;
     color: var(--color-primary-dark);
 }
 
 .carousel-card-price .sub-price {
-    font-size: 12px;
+    font-size: 12.5px;
     color: var(--color-text-muted);
 }
 
 .carousel-specs-list {
     list-style: none;
     padding: 0;
-    margin: 0 0 18px 0;
-    font-size: 13px;
+    margin: 0 0 20px 0;
+    font-size: 13.5px;
     color: var(--color-text-muted);
     border-top: 1px solid #FAF8F3;
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 .carousel-specs-list li {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
+    line-height: 1.4;
 }
 
 .carousel-card-actions {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-top: auto;
 }
 
 .btn-card-buy {
@@ -2830,9 +2778,9 @@ a:hover {
     gap: 6px;
     background: var(--color-primary-dark);
     color: #ffffff;
-    font-size: 14.5px;
+    font-size: 15px;
     font-weight: 700;
-    padding: 12px;
+    padding: 13px;
     border-radius: 10px;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -2858,60 +2806,55 @@ a:hover {
     cursor: pointer;
 }
 
-/* Card CTA Combo */
-.product-carousel-card.card-combo-cta {
-    background: linear-gradient(135deg, #2D3B2D 0%, #1A221D 100%);
-    border-color: var(--color-primary-dark);
-    color: #ffffff;
-    justify-content: center;
-    text-align: center;
-    padding: 28px 22px;
-}
-
-.card-combo-cta h3 {
-    color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-weight: 800;
-}
-
-.card-combo-cta p {
-    color: var(--color-secondary);
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.card-combo-cta .combo-tag-pill {
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.25);
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 700;
-    display: inline-block;
-    margin-bottom: 16px;
-    color: #ffffff;
-}
-
-.card-combo-cta .btn-combo-cta {
-    background: #25D366;
-    color: #ffffff;
-    font-weight: 800;
-    padding: 14px;
-    border-radius: 12px;
-    text-decoration: none;
+/* Faixa de Destaque para Montagem de Combo */
+.combo-callout-strip {
+    max-width: 1200px;
+    margin: 28px auto 0 auto;
+    background: linear-gradient(135deg, #FAF8F3 0%, #F0F7F4 100%);
+    border: 1.5px dashed var(--color-primary);
+    border-radius: 16px;
+    padding: 22px 28px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    box-shadow: 0 4px 14px rgba(107, 142, 113, 0.06);
+}
+
+.combo-callout-text h3 {
+    color: var(--color-primary-dark);
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.combo-callout-text p {
+    color: var(--color-text-muted);
+    font-size: 14px;
+    margin: 0;
+}
+
+.btn-combo-callout {
+    background: #25D366;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
     gap: 8px;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
     transition: all 0.2s ease;
 }
 
-.card-combo-cta .btn-combo-cta:hover {
+.btn-combo-callout:hover {
     background: #1ebc59;
     transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
 }
 
 /* Indicador de Swipe no Mobile */
@@ -2926,12 +2869,12 @@ a:hover {
     font-weight: 700;
     padding: 8px 16px;
     border-radius: 20px;
-    margin-top: 12px;
+    margin: 12px auto 0 auto;
     width: fit-content;
     box-shadow: 0 4px 12px rgba(107, 142, 113, 0.15);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .mobile-swipe-badge {
         display: inline-flex;
     }
@@ -2953,7 +2896,13 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-top: 12px;
+    margin-top: 14px;
+}
+
+@media (min-width: 992px) {
+    .carousel-pagination-dots {
+        display: none; /* No desktop não precisa de dots pois os 3 cards já estão 100% visíveis */
+    }
 }
 
 .carousel-dot {

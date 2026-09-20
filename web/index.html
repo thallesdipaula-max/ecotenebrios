@@ -287,12 +287,12 @@
             </div>
         </section>
 
-        <!-- Seção de Produtos em Carrossel Horizontal -->
+        <!-- Vitrine de Produtos (Grid no Desktop / Carrossel no Mobile) -->
         <section class="products-horizontal-section" id="produtos-vitrine">
             <div class="products-carousel-header">
                 <div class="products-carousel-title-col">
                     <h2>Nossos Alimentos Vivos e Desidratados</h2>
-                    <p>Produção artesanal com <em>Gut Loading</em> nobre, embalagem climatizada e envio para todo o Brasil.</p>
+                    <p>Produção artesanal com <em>Gut Loading</em> nobre, embalagem climatizada e envio seguro para todo o Brasil.</p>
                     <div class="mobile-swipe-badge">
                         <span class="swipe-hand-anim">👉</span>
                         <span>Deslize para o lado para ver todos os alimentos</span>
@@ -301,14 +301,6 @@
             </div>
 
             <div class="products-scroll-wrapper">
-                <!-- Botões Laterais Flutuantes de Navegação (Desktop) -->
-                <button type="button" class="carousel-side-btn carousel-side-prev" onclick="scrollProductsCarousel(-1)" aria-label="Produto anterior">
-                    <span>‹</span>
-                </button>
-                <button type="button" class="carousel-side-btn carousel-side-next" onclick="scrollProductsCarousel(1)" aria-label="Próximo produto">
-                    <span>›</span>
-                </button>
-
                 <div class="products-scroll-track" id="productsCarouselTrack">
                     
                     <!-- Card 1: Kit Premium Tenébrios Vivos -->
@@ -324,8 +316,8 @@
                                 <span class="sub-price">/ com frete grátis</span>
                             </div>
                             <ul class="carousel-specs-list">
-                                <li>✨ Larvas vivas ativas e selecionadas</li>
-                                <li>📦 Embalagem térmica ventilada exclusiva</li>
+                                <li>✨ Larvas vivas ativas com <em>Gut Loading</em></li>
+                                <li>📦 Embalagem térmica ventilada anti-fuga</li>
                                 <li>🚚 <strong>Frete Grátis</strong> para todo o Brasil</li>
                                 <li>🛡️ Garantia de chegada 100% vivos</li>
                             </ul>
@@ -398,30 +390,25 @@
                         </div>
                     </article>
 
-                    <!-- Card 4: CTA Combo Especial com Desconto -->
-                    <article class="product-carousel-card card-combo-cta">
-                        <div>
-                            <span class="combo-tag-pill">🎁 Economia Progressiva</span>
-                            <h3>Monte Seu Combo</h3>
-                            <p>Combine diferentes alimentos para o seu pet e ganhe descontos automáticos no pedido inteiro!</p>
-                            <div style="background: rgba(255,255,255,0.1); padding: 12px; border-radius: 10px; margin-bottom: 20px; font-size: 13px;">
-                                <div>✨ <strong>2 itens:</strong> 5% OFF</div>
-                                <div>🏆 <strong>3 ou mais itens:</strong> 10% OFF</div>
-                            </div>
-                        </div>
-                        <a href="./comprar/" class="btn-combo-cta">
-                            <span>Montar Meu Pedido 🛒</span>
-                        </a>
-                    </article>
-
                 </div>
-                <!-- Indicadores de Paginação do Carrossel (Dots) -->
+
+                <!-- Indicadores de Paginação do Carrossel (Visíveis no Mobile) -->
                 <div class="carousel-pagination-dots" id="carouselDots">
                     <button type="button" class="carousel-dot active" onclick="scrollProductsCarouselTo(0)" aria-label="Produto 1"></button>
                     <button type="button" class="carousel-dot" onclick="scrollProductsCarouselTo(1)" aria-label="Produto 2"></button>
                     <button type="button" class="carousel-dot" onclick="scrollProductsCarouselTo(2)" aria-label="Produto 3"></button>
-                    <button type="button" class="carousel-dot" onclick="scrollProductsCarouselTo(3)" aria-label="Produto 4"></button>
                 </div>
+            </div>
+
+            <!-- Faixa de Destaque para Montagem de Combo com Desconto -->
+            <div class="combo-callout-strip">
+                <div class="combo-callout-text">
+                    <h3>🎁 Quer Levar Mais de um Produto ou Montar um Pedido Personalizado?</h3>
+                    <p>Aproveite nossos <strong>descontos progressivos automáticos</strong>: 2 itens com 5% OFF ou 3+ itens com 10% OFF no pedido inteiro!</p>
+                </div>
+                <a href="./comprar/" class="btn-combo-callout">
+                    <span>Montar Meu Pedido (/comprar/) 🛒</span>
+                </a>
             </div>
         </section>
 
