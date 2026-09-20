@@ -277,7 +277,7 @@
                     <a href="./comprar/" class="btn btn-primary btn-hero" style="margin: 0; background: var(--color-primary-dark); font-weight: 700;">
                         🛒 Monte Seu Pedido Online
                     </a>
-                    <a href="https://wa.me/5515981098418?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Ecotenébrios." class="btn btn-primary btn-hero" style="margin: 0; background: #25D366;" target="_blank" rel="noopener">
+                    <a href="https://wa.me/5515981098418?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Ecotenébrios." class="btn btn-primary btn-hero" style="margin: 0; background: #128C7E;" target="_blank" rel="noopener">
                         <img src="./assets/images/whatsapp-icon.webp" alt="WhatsApp" class="btn-icon-img" width="490" height="509">
                         Falar no WhatsApp
                     </a>
@@ -326,7 +326,7 @@
                             <a href="./comprar/" class="btn-card-buy">
                                 🛒 Adicionar ao Pedido
                             </a>
-                            <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-bzfv7yiX4U-49,90" target="_blank" rel="noopener" class="btn-card-alt btn-checkout" data-product="Kit Premium Tenébrios Vivos" data-value="49.90">
+                            <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-bzfv7yiX4U-49,90" target="_blank" rel="noopener" class="btn-card-alt btn-checkout" data-product="Kit Premium Tenébrios Vivos" data-value="49.90" aria-label="Pagar online agora: Kit Premium Tenébrios Vivos">
                                 Ou pagar online agora →
                             </a>
                         </div>
@@ -355,7 +355,7 @@
                             <a href="./comprar/" class="btn-card-buy">
                                 🛒 Adicionar ao Pedido
                             </a>
-                            <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-HgH3GDr86l-39,90" target="_blank" rel="noopener" class="btn-card-alt btn-checkout" data-product="Tenébrios Desidratados 50g" data-value="39.90">
+                            <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-HgH3GDr86l-39,90" target="_blank" rel="noopener" class="btn-card-alt btn-checkout" data-product="Tenébrios Desidratados 50g" data-value="39.90" aria-label="Pagar online agora: Tenébrios Desidratados 50g">
                                 Ou pagar online agora →
                             </a>
                         </div>
@@ -384,7 +384,7 @@
                             <a href="./comprar/" class="btn-card-buy">
                                 🛒 Adicionar ao Pedido
                             </a>
-                            <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-RCdQTtivbb-39,90" target="_blank" rel="noopener" class="btn-card-alt btn-checkout" data-product="Minhocas Californianas 50un" data-value="39.90">
+                            <a href="https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-RCdQTtivbb-39,90" target="_blank" rel="noopener" class="btn-card-alt btn-checkout" data-product="Minhocas Californianas 50un" data-value="39.90" aria-label="Pagar online agora: Minhocas Californianas 50 unidades">
                                 Ou pagar online agora →
                             </a>
                         </div>
@@ -394,9 +394,9 @@
 
                 <!-- Indicadores de Paginação do Carrossel (Visíveis no Mobile) -->
                 <div class="carousel-pagination-dots" id="carouselDots">
-                    <button type="button" class="carousel-dot active" onclick="scrollProductsCarouselTo(0)" aria-label="Produto 1"></button>
-                    <button type="button" class="carousel-dot" onclick="scrollProductsCarouselTo(1)" aria-label="Produto 2"></button>
-                    <button type="button" class="carousel-dot" onclick="scrollProductsCarouselTo(2)" aria-label="Produto 3"></button>
+                    <button type="button" class="carousel-dot active" onclick="scrollProductsCarouselTo(0)" aria-label="Ver slide 1: Kit Premium Tenébrios Vivos"></button>
+                    <button type="button" class="carousel-dot" onclick="scrollProductsCarouselTo(1)" aria-label="Ver slide 2: Tenébrios Desidratados"></button>
+                    <button type="button" class="carousel-dot" onclick="scrollProductsCarouselTo(2)" aria-label="Ver slide 3: Minhocas Californianas"></button>
                 </div>
             </div>
 
@@ -420,7 +420,7 @@
                 <div class="pet-grid">
                     <a href="https://wa.me/5515981098418?text=Olá!%20Tenho%20um%20Gecko%20Leopardo%20e%20gostaria%20de%20indicação%20de%20alimentação%20natural." class="pet-segment-card" target="_blank" rel="noopener">
                         <div class="pet-icon"><img src="./assets/images/gecko-leopardo.webp" alt="Gecko Leopardo" loading="lazy" width="64" height="64" style="object-position: 70% 25%;"></div>
-                        <h3>Geko Leopardo</h3>
+                        <h3>Gecko Leopardo</h3>
                         <span class="pet-tag">Répteis</span>
                     </a>
                     <a href="https://wa.me/5515981098418?text=Olá!%20Tenho%20um%20Dragão%20Barbudo%20(Pogona)%20e%20gostaria%20de%20indicação%20de%20alimentação%20natural." class="pet-segment-card" target="_blank" rel="noopener">
@@ -940,7 +940,7 @@ n.queue=[]}(window, document,'script');
 fbq('init', '1006621321781390');
 fbq('track', 'PageView');
 
-// Carrega na primeira interacao do usuario ou 1,5s apos o load — o que vier antes.
+// Carrega na primeira interação do usuário ou após 3.5s via requestIdleCallback.
 (function () {
     var carregado = false;
     function carregarPixel() {
@@ -954,10 +954,19 @@ fbq('track', 'PageView');
     ['pointerdown', 'touchstart', 'keydown', 'scroll'].forEach(function (evento) {
         window.addEventListener(evento, carregarPixel, { once: true, passive: true });
     });
+    
+    function agendarCargaOciosa() {
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(function () { setTimeout(carregarPixel, 2000); });
+        } else {
+            setTimeout(carregarPixel, 3500);
+        }
+    }
+
     if (document.readyState === 'complete') {
-        setTimeout(carregarPixel, 1500);
+        agendarCargaOciosa();
     } else {
-        window.addEventListener('load', function () { setTimeout(carregarPixel, 1500); }, { once: true });
+        window.addEventListener('load', agendarCargaOciosa, { once: true });
     }
 })();
 </script>
@@ -1047,14 +1056,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Navegação e Sincronização do Carrossel Horizontal de Produtos
-function scrollProductsCarousel(direction) {
+// Navegação e Sincronização do Carrossel Horizontal de Produtos (Sem Reflow Forçado)
+let cachedCarouselCardWidth = 340;
+function recalcularLarguraCard() {
     const track = document.getElementById('productsCarouselTrack');
     if (!track) return;
     const card = track.querySelector('.product-carousel-card');
-    const cardWidth = card ? card.offsetWidth + 20 : 340;
+    if (card && card.offsetWidth > 0) {
+        cachedCarouselCardWidth = card.offsetWidth + 20;
+    }
+}
+
+function scrollProductsCarousel(direction) {
+    const track = document.getElementById('productsCarouselTrack');
+    if (!track) return;
     track.scrollBy({
-        left: direction * cardWidth,
+        left: direction * cachedCarouselCardWidth,
         behavior: 'smooth'
     });
 }
@@ -1074,14 +1091,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const dots = document.querySelectorAll('#carouselDots .carousel-dot');
     if (!track || dots.length === 0) return;
 
+    recalcularLarguraCard();
+    window.addEventListener('resize', recalcularLarguraCard, { passive: true });
+
     let scrollTimeout;
     track.addEventListener('scroll', function() {
         clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(() => {
             const scrollLeft = track.scrollLeft;
-            const card = track.querySelector('.product-carousel-card');
-            const cardWidth = card ? card.offsetWidth + 20 : 340;
-            const activeIndex = Math.min(dots.length - 1, Math.max(0, Math.round(scrollLeft / cardWidth)));
+            const activeIndex = Math.min(dots.length - 1, Math.max(0, Math.round(scrollLeft / cachedCarouselCardWidth)));
             
             dots.forEach((dot, idx) => {
                 if (idx === activeIndex) {
@@ -1091,7 +1109,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }, 50);
-    });
+    }, { passive: true });
 });
 </script>
 </body>

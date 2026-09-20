@@ -39,7 +39,15 @@
     --font-size-2xl: 32px;
     --font-size-3xl: 48px;
 
-    --transition: all 0.3s ease;
+    --transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+@font-face {
+    font-family: 'Phosphor';
+    src: url('https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/Phosphor.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Reset & Base */
@@ -2836,7 +2844,7 @@ a:hover {
 }
 
 .btn-combo-callout {
-    background: #25D366;
+    background: #1B6E39;
     color: #ffffff;
     font-size: 15px;
     font-weight: 800;
@@ -2847,14 +2855,14 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
-    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(27, 110, 57, 0.25);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-combo-callout:hover {
-    background: #1ebc59;
+    background: #14552c;
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+    box-shadow: 0 6px 18px rgba(27, 110, 57, 0.35);
 }
 
 /* Indicador de Swipe no Mobile */
@@ -2895,8 +2903,9 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     margin-top: 14px;
+    padding: 6px 0;
 }
 
 @media (min-width: 992px) {
@@ -2906,14 +2915,28 @@ a:hover {
 }
 
 .carousel-dot {
+    position: relative;
     width: 10px;
     height: 10px;
+    min-width: 10px;
+    min-height: 10px;
     border-radius: 50%;
-    background: #EAE6DC;
+    background: #C4BEB2;
     border: none;
     padding: 0;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+/* Touch target acessível de 44x44px em conformidade com WCAG */
+.carousel-dot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
 }
 
 .carousel-dot.active {
