@@ -4,13 +4,13 @@
     <!-- Meta Tags Básicas e SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Monte seu pedido de alimentação natural para pets exóticos: tenébrios vivos, tenébrios desidratados e minhocas californianas. Descontos automáticos e envio climatizado!">
+    <meta name="description" content="Compre alimento vivo e desidratado direto da produtora: Tenébrios Vivos, Tenébrios Desidratados e Minhocas Californianas com envio climatizado para todo o Brasil.">
     <meta name="keywords" content="comprar tenebrio vivo, comprar tenebrio desidratado, comprar minhocas californianas, alimento vivo tatui, pedido ecotenebrios, alimentacao pet exotico">
     <meta name="author" content="Ecotenébrios">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#6B8E71">
 
-    <!-- Open Graph / Facebook / WhatsApp Link Preview -->
+    <!-- Open Graph / WhatsApp Preview -->
     <meta property="og:title" content="Comprar Alimento Natural e Tenébrios | Ecotenébrios">
     <meta property="og:description" content="Monte seu pedido personalizado com cálculo instantâneo, descontos progressivos e envio climatizado para todo o Brasil.">
     <meta property="og:type" content="website">
@@ -55,7 +55,7 @@
               "position": 1,
               "name": "Tenébrios Vivos (Kit Premium)",
               "image": "https://ecotenebrios.com.br/assets/images/oferta-kit-premium.webp",
-              "description": "Larvas de tenébrio vivas criadas em substrato nobre com gut loading. Envio climatizado para todo o Brasil.",
+              "description": "Larvas de tenébrio vivas criadas em substrato nobre com gut loading. Envio climatizado com frete grátis para todo o Brasil.",
               "offers": {
                 "@type": "Offer",
                 "price": "49.90",
@@ -81,7 +81,7 @@
               "position": 3,
               "name": "Minhocas Californianas (50 unidades)",
               "image": "https://ecotenebrios.com.br/assets/images/oferta-minhocas.webp",
-              "description": "Minhocas californianas vivas selecionadas, excelente fonte de cálcio e umidade para répteis e peixes.",
+              "description": "Minhocas californianas vivas selecionadas, fonte nobre de cálcio e umidade para répteis e peixes.",
               "offers": {
                 "@type": "Offer",
                 "price": "39.90",
@@ -109,281 +109,332 @@
     fbq('track', 'PageView');
     </script>
 </head>
-<body>
+<body class="shop-page-wrapper">
 
-    <!-- Header Slim -->
-    <header class="header">
-        <a href="../index.html">
+    <!-- Header Fixo de Navegação -->
+    <header class="shop-header-nav">
+        <a href="../index.html" title="Voltar ao início">
             <img src="../assets/images/logo.webp" alt="Logo Ecotenébrios" class="header-logo">
         </a>
+        <div class="shop-header-badge">
+            <span>🛡️ Compra Direta do Criatório</span>
+        </div>
     </header>
 
     <main class="shop-container">
-        <!-- Hero Section -->
-        <section class="shop-hero">
-            <h1>Monte o Seu Pedido Personalizado</h1>
-            <p>Selecione os alimentos ideais para seu pet, ajuste as quantidades e aproveite descontos progressivos automáticos com envio seguro para todo o Brasil.</p>
+        <!-- Hero Card Estilo Bancada Naturalista -->
+        <section class="shop-hero-card">
+            <span class="shop-kicker-tag">Manejo Artesanal • Tatuí/SP</span>
+            <h1>Monte o Pedido do Seu Pet</h1>
+            <p>Selecione os alimentos ideais, combine diferentes itens para desbloquear descontos progressivos e receba com embalagem climatizada direto na sua porta.</p>
             
-            <div class="trust-badges-bar">
-                <span class="trust-badge-pill">🚚 Frete Grátis no Kit Premium</span>
-                <span class="trust-badge-pill">📦 Envio Climatizado</span>
-                <span class="trust-badge-pill">📍 Entrega Tatuí e Região</span>
-                <span class="trust-badge-pill">🛡️ Garantia de Chegada Viva</span>
+            <div class="shop-trust-pills">
+                <span class="shop-trust-pill">🚚 Frete Grátis no Kit Premium</span>
+                <span class="shop-trust-pill">📦 Embalagem Térmica Ventilada</span>
+                <span class="shop-trust-pill">🌱 100% Nutrição Orgânica</span>
+                <span class="shop-trust-pill">✨ Garantia de Chegada Viva</span>
             </div>
         </section>
 
-        <!-- Combo Discount Progress Banner -->
-        <div class="combo-banner">
-            <div class="combo-banner-title" id="comboStatusTitle">🎁 Desconto Combo: Adicione 2 ou mais itens para economizar!</div>
-            <div class="combo-progress-track">
-                <div class="combo-progress-fill" id="comboProgressBar"></div>
+        <!-- Rastreador Visual de Economia Combo -->
+        <section class="savings-tracker-box">
+            <div class="savings-tracker-header">
+                <span class="savings-tracker-title" id="trackerTitle">
+                    🎁 Desconto Combo Progressivo
+                </span>
+                <div class="savings-tier-badges">
+                    <span class="tier-badge" id="tierBadge1">2 itens: 5% OFF</span>
+                    <span class="tier-badge" id="tierBadge2">3+ itens: 10% OFF</span>
+                </div>
             </div>
-            <div class="combo-banner-subtitle" id="comboStatusSubtitle">2 itens = 5% OFF • 3 ou mais itens = 10% OFF no pedido inteiro</div>
-        </div>
+            <div class="savings-progress-track">
+                <div class="savings-progress-bar" id="trackerProgressBar"></div>
+            </div>
+            <div class="savings-tracker-message" id="trackerMessage">
+                Adicione 2 ou mais itens ao seu carrinho para ativar o desconto automático no pedido todo.
+            </div>
+        </section>
 
-        <!-- Main Layout: Products + Checkout -->
-        <div class="shop-layout">
-            <!-- Left Column: Products & Options -->
-            <div class="shop-products-column">
-                <!-- Products Grid -->
-                <div class="products-selector-grid">
-                    <!-- Produto 1: Kit Premium Vivos -->
-                    <div class="product-order-card" id="card-tenebrio-vivo">
-                        <span class="product-badge-tag">⭐ Mais Vendido</span>
-                        <img src="../assets/images/oferta-kit-premium.webp" alt="Kit Premium Tenébrios Vivos" class="product-order-image">
+        <!-- Grid Principal: Produtos à Esquerda + Recibo à Direita -->
+        <div class="shop-main-layout">
+            
+            <!-- Coluna de Produtos e Opções -->
+            <div class="shop-content-col">
+                
+                <!-- Grade de Cards de Produtos -->
+                <div class="product-cards-grid">
+                    
+                    <!-- Produto 1: Kit Premium Tenébrios Vivos -->
+                    <article class="product-order-card-pro" id="card-vivo">
+                        <span class="product-card-badge">⭐ Mais Vendido</span>
+                        <div class="product-card-image-wrap">
+                            <img src="../assets/images/oferta-kit-premium.webp" alt="Kit Premium Tenébrios Vivos" loading="lazy">
+                        </div>
                         <div>
-                            <h3 class="product-order-title">Tenébrios Vivos (Kit Premium)</h3>
-                            <div class="product-order-price">
-                                R$ 49,90 <span class="price-unit">/ kit com frete grátis</span>
+                            <h2 class="product-card-title">Tenébrios Vivos (Kit Premium)</h2>
+                            <div class="product-price-block">
+                                <span class="product-price-main">R$ 49,90</span>
+                                <span class="product-price-sub">/ kit com frete incluso</span>
                             </div>
-                            <ul class="product-features-list">
-                                <li>✨ Larvas ativas e selecionadas com <em>Gut Loading</em></li>
+                            <ul class="product-specs-list">
+                                <li>✨ <strong>Larvas ativas</strong> selecionadas com <em>Gut Loading</em></li>
                                 <li>📦 Embalagem térmica ventilada anti-fuga</li>
                                 <li>🚚 <strong>Frete Grátis</strong> para todo o Brasil</li>
-                                <li>🦎 Ideal para répteis, pássaros de canto e peixes</li>
+                                <li>🦎 Ideal para répteis, pássaros de canto e primatas</li>
                             </ul>
                         </div>
-                        <div class="stepper-control-box">
-                            <button type="button" class="stepper-btn" onclick="updateQty('vivo', -1)" aria-label="Diminuir">−</button>
-                            <span class="stepper-value" id="qty-vivo">0</span>
-                            <button type="button" class="stepper-btn" onclick="updateQty('vivo', 1)" aria-label="Aumentar">+</button>
+                        <div class="stepper-control-pro">
+                            <button type="button" class="stepper-btn-pro" onclick="updateQty('vivo', -1)" aria-label="Diminuir quantidade">−</button>
+                            <span class="stepper-count-pro" id="qty-vivo">0</span>
+                            <button type="button" class="stepper-btn-pro" onclick="updateQty('vivo', 1)" aria-label="Aumentar quantidade">+</button>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Produto 2: Tenébrios Desidratados -->
-                    <div class="product-order-card" id="card-tenebrio-desidratado">
-                        <span class="product-badge-tag" style="background: #8E6B71;">🪶 50% Proteína</span>
-                        <img src="../assets/images/oferta-tenebrios-desidratados.webp" alt="Tenébrios Desidratados 50g" class="product-order-image">
+                    <article class="product-order-card-pro" id="card-desidratado">
+                        <span class="product-card-badge" style="background: #8E6B71;">🪶 50% Proteína</span>
+                        <div class="product-card-image-wrap">
+                            <img src="../assets/images/oferta-tenebrios-desidratados.webp" alt="Tenébrios Desidratados 50g" loading="lazy">
+                        </div>
                         <div>
-                            <h3 class="product-order-title">Tenébrios Desidratados (50g)</h3>
-                            <div class="product-order-price">
-                                R$ 39,90 <span class="price-unit">/ pote selado</span>
+                            <h2 class="product-card-title">Tenébrios Desidratados (50g)</h2>
+                            <div class="product-price-block">
+                                <span class="product-price-main">R$ 39,90</span>
+                                <span class="product-price-sub">/ pote selado 50g</span>
                             </div>
-                            <ul class="product-features-list">
-                                <li>💪 50% de proteína pura e alta digestibilidade</li>
-                                <li>🪶 Essencial para muda de penas de calopsitas e pássaros</li>
-                                <li>🕒 Validade prolongada (não estraga, não tem cheiro)</li>
-                                <li>✨ Pronto para misturar na ração ou sementes</li>
+                            <ul class="product-specs-list">
+                                <li>💪 50% de proteína nobre e digestibilidade superior</li>
+                                <li>🪶 Essencial na muda de penas de calopsitas e passeriformes</li>
+                                <li>🕒 Validade prolongada de 1 ano (sem odores)</li>
+                                <li>✨ Pronto para servir ou misturar na farinhada</li>
                             </ul>
                         </div>
-                        <div class="stepper-control-box">
-                            <button type="button" class="stepper-btn" onclick="updateQty('desidratado', -1)" aria-label="Diminuir">−</button>
-                            <span class="stepper-value" id="qty-desidratado">0</span>
-                            <button type="button" class="stepper-btn" onclick="updateQty('desidratado', 1)" aria-label="Aumentar">+</button>
+                        <div class="stepper-control-pro">
+                            <button type="button" class="stepper-btn-pro" onclick="updateQty('desidratado', -1)" aria-label="Diminuir quantidade">−</button>
+                            <span class="stepper-count-pro" id="qty-desidratado">0</span>
+                            <button type="button" class="stepper-btn-pro" onclick="updateQty('desidratado', 1)" aria-label="Aumentar quantidade">+</button>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Produto 3: Minhocas Californianas -->
-                    <div class="product-order-card" id="card-minhoca">
-                        <span class="product-badge-tag" style="background: #4a5f4e;">🪱 Rica em Cálcio</span>
-                        <img src="../assets/images/oferta-minhocas.webp" alt="Minhocas Californianas 50 unidades" class="product-order-image">
+                    <article class="product-order-card-pro" id="card-minhoca">
+                        <span class="product-card-badge" style="background: #4A5F4E;">🪱 Rica em Cálcio</span>
+                        <div class="product-card-image-wrap">
+                            <img src="../assets/images/oferta-minhocas.webp" alt="Minhocas Californianas 50 unidades" loading="lazy">
+                        </div>
                         <div>
-                            <h3 class="product-order-title">Minhocas Californianas (50un)</h3>
-                            <div class="product-order-price">
-                                R$ 39,90 <span class="price-unit">/ pote com 50 un</span>
+                            <h2 class="product-card-title">Minhocas Californianas (50un)</h2>
+                            <div class="product-price-block">
+                                <span class="product-price-main">R$ 39,90</span>
+                                <span class="product-price-sub">/ pote com 50 unidades</span>
                             </div>
-                            <ul class="product-features-list">
-                                <li>💧 Alto teor de hidratação e cálcio orgânico</li>
-                                <li>🦎 Estimula animais com apetite seletivo (geckos, jabutis)</li>
-                                <li>🐟 O petisco favorito de peixes carnívoros (Oscar)</li>
-                                <li>📦 Enviadas vivas em substrato úmido enriquecido</li>
+                            <ul class="product-specs-list">
+                                <li>💧 Alto teor de hidratação e cálcio biodisponível</li>
+                                <li>🦎 Estimula animais inapetentes ou em recuperação</li>
+                                <li>🐟 O petisco mais apreciado por peixes grandes (Oscar)</li>
+                                <li>📦 Enviadas vivas em substrato vegetal enriquecido</li>
                             </ul>
                         </div>
-                        <div class="stepper-control-box">
-                            <button type="button" class="stepper-btn" onclick="updateQty('minhoca', -1)" aria-label="Diminuir">−</button>
-                            <span class="stepper-value" id="qty-minhoca">0</span>
-                            <button type="button" class="stepper-btn" onclick="updateQty('minhoca', 1)" aria-label="Aumentar">+</button>
+                        <div class="stepper-control-pro">
+                            <button type="button" class="stepper-btn-pro" onclick="updateQty('minhoca', -1)" aria-label="Diminuir quantidade">−</button>
+                            <span class="stepper-count-pro" id="qty-minhoca">0</span>
+                            <button type="button" class="stepper-btn-pro" onclick="updateQty('minhoca', 1)" aria-label="Aumentar quantidade">+</button>
                         </div>
-                    </div>
+                    </article>
+
                 </div>
 
-                <!-- Shipping Method Selection -->
-                <div class="shipping-selection-section">
-                    <div class="section-subtitle-tag">Passo 2 de 2</div>
-                    <h3 class="shipping-section-title">Escolha a Região de Entrega</h3>
+                <!-- Bloco de Modalidade de Envio e Dados Rápidos -->
+                <div class="shipping-block-card">
+                    <h3 class="block-step-title">🚚 1. Região de Envio</h3>
                     
-                    <div class="shipping-methods-grid">
-                        <div class="shipping-method-card active" id="ship-brasil" onclick="setShipping('brasil')">
-                            <input type="radio" name="shipping" id="radio-brasil" class="shipping-radio" checked>
-                            <div class="shipping-card-content">
+                    <div class="shipping-methods-container">
+                        <div class="shipping-option-card selected" id="opt-ship-brasil" onclick="setShipping('brasil')">
+                            <input type="radio" name="shippingOpt" id="radio-brasil" checked style="margin-top: 3px;">
+                            <div>
                                 <h4>🇧🇷 Envio para Todo o Brasil</h4>
-                                <p>Transportadora expressa com embalagem climatizada. <strong>Frete Grátis incluso</strong> caso seu pedido contenha o Kit Premium.</p>
+                                <p>Transportadora expressa com embalagem térmica climatizada. <strong>Frete Grátis</strong> caso seu pedido inclua o Kit Premium.</p>
                             </div>
                         </div>
 
-                        <div class="shipping-method-card" id="ship-local" onclick="setShipping('local')">
-                            <input type="radio" name="shipping" id="radio-local" class="shipping-radio">
-                            <div class="shipping-card-content">
-                                <h4>📍 Entrega Tatuí e Região</h4>
-                                <p>Tatuí, Boituva, Cerquilho, Cesário Lange, Sorocaba e Itapetininga. Entrega rápida combinada direto no WhatsApp.</p>
+                        <div class="shipping-option-card" id="opt-ship-local" onclick="setShipping('local')">
+                            <input type="radio" name="shippingOpt" id="radio-local" style="margin-top: 3px;">
+                            <div>
+                                <h4>📍 Entrega Regional (Tatuí e Região)</h4>
+                                <p>Tatuí, Boituva, Cerquilho, Cesário Lange, Sorocaba e Itapetininga com entrega expressa combinada via WhatsApp.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Fast Customer Info (Optional) -->
-                    <div class="customer-fast-info">
-                        <div class="customer-input-group">
-                            <label for="clientName">Seu Nome (Opcional):</label>
-                            <input type="text" id="clientName" placeholder="Ex: Lucas Silva" oninput="updateCheckoutState()">
+                    <div class="quick-chips-title">🐾 Qual é a espécie do seu pet? (Clique para preencher rápido):</div>
+                    <div class="pet-chips-row">
+                        <button type="button" class="pet-chip-btn" onclick="selectPetChip('🦎 Gecko Leopardo')">🦎 Gecko Leopardo</button>
+                        <button type="button" class="pet-chip-btn" onclick="selectPetChip('🦜 Calopsita / Pássaros')">🦜 Calopsita / Pássaros</button>
+                        <button type="button" class="pet-chip-btn" onclick="selectPetChip('🎵 Trinca-Ferro / Canto')">🎵 Trinca-Ferro / Canto</button>
+                        <button type="button" class="pet-chip-btn" onclick="selectPetChip('🦔 Ouriço Pigmeu')">🦔 Ouriço Pigmeu</button>
+                        <button type="button" class="pet-chip-btn" onclick="selectPetChip('🦎 Dragão Barbudo (Pogona)')">🦎 Pogona</button>
+                        <button type="button" class="pet-chip-btn" onclick="selectPetChip('🐟 Peixe Ornamental (Oscar)')">🐟 Peixes</button>
+                        <button type="button" class="pet-chip-btn" onclick="selectPetChip('🐹 Roedor / Hamster')">🐹 Roedores</button>
+                    </div>
+
+                    <div class="customer-fields-grid">
+                        <div class="input-styled-box">
+                            <label for="inputName">Seu Nome (Opcional):</label>
+                            <input type="text" id="inputName" placeholder="Ex: Rodrigo Silva" oninput="updateCheckoutState()">
                         </div>
-                        <div class="customer-input-group">
-                            <label for="clientCity">Sua Cidade / Estado:</label>
-                            <input type="text" id="clientCity" placeholder="Ex: Tatuí - SP ou Curitiba - PR" oninput="updateCheckoutState()">
+                        <div class="input-styled-box">
+                            <label for="inputCity">Cidade / Estado:</label>
+                            <input type="text" id="inputCity" placeholder="Ex: Tatuí - SP ou Curitiba - PR" oninput="updateCheckoutState()">
                         </div>
-                        <div class="customer-input-group" style="grid-column: 1 / -1;">
-                            <label for="clientPet">Qual é o seu pet? (Para a Raíssa enviar dicas de manejo certas):</label>
-                            <input type="text" id="clientPet" placeholder="Ex: Gecko Leopardo, Calopsita, Trinca-Ferro, Ouriço..." oninput="updateCheckoutState()">
+                        <div class="input-styled-box" style="grid-column: 1 / -1;">
+                            <label for="inputPet">Pet Selecionado:</label>
+                            <input type="text" id="inputPet" placeholder="Ex: Gecko Leopardo, Calopsita, Ouriço..." oninput="updateCheckoutState()">
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <!-- Right Column: Sticky Summary & Checkout -->
-            <aside class="shop-checkout-column">
-                <div class="checkout-summary-card">
-                    <div class="summary-card-title">
-                        <span>Resumo do Pedido</span>
-                        <span id="totalItemsBadge" style="font-size: 13px; font-weight: 600; background: #FAF8F3; padding: 2px 8px; border-radius: 12px; border: 1px solid var(--color-border);">0 itens</span>
+            <!-- Coluna de Recibo e Checkout Fixo -->
+            <aside class="shop-sidebar-col">
+                <div class="checkout-receipt-card">
+                    <div class="receipt-header">
+                        <h3>Resumo do Pedido</h3>
+                        <span id="badgeTotalItems" style="font-size: 12px; font-weight: 700; background: #E7EFE1; color: var(--color-primary-dark); padding: 3px 10px; border-radius: 12px; border: 1px solid var(--color-primary);">0 itens</span>
                     </div>
 
-                    <!-- Items List -->
-                    <div class="cart-items-preview" id="cartPreview">
-                        <div class="cart-empty-message">Nenhum produto selecionado ainda.<br>Use os botões <strong>+</strong> acima para adicionar.</div>
-                    </div>
-
-                    <!-- Calculations Box -->
-                    <div class="summary-calculations-box">
-                        <div class="calc-row">
-                            <span>Subtotal dos produtos:</span>
-                            <span id="subtotalVal">R$ 0,00</span>
-                        </div>
-                        <div class="calc-row discount-row" id="discountRow" style="display: none;">
-                            <span id="discountLabel">Desconto Combo:</span>
-                            <span id="discountVal">- R$ 0,00</span>
-                        </div>
-                        <div class="calc-row">
-                            <span>Modalidade de frete:</span>
-                            <span id="shippingSummaryText" style="font-weight: 600;">Envio Brasil</span>
-                        </div>
-                        <div class="calc-row total-row">
-                            <span>Total a Pagar:</span>
-                            <span class="total-amount" id="totalVal">R$ 0,00</span>
+                    <!-- Lista de Itens no Recibo -->
+                    <div class="receipt-items-list" id="receiptItemsContainer">
+                        <div style="text-align: center; color: var(--color-text-muted); font-size: 13.5px; padding: 20px 0;">
+                            Nenhum item selecionado.<br>Clique nos botões <strong>+</strong> acima para adicionar.
                         </div>
                     </div>
 
-                    <!-- Action Buttons -->
-                    <button type="button" class="btn-checkout-whatsapp" id="btnWhatsAppCheckout" onclick="proceedToWhatsApp()" disabled>
-                        <span>📲 Finalizar no WhatsApp</span>
+                    <!-- Linhas de Cálculo -->
+                    <div class="receipt-calculations">
+                        <div class="receipt-calc-line">
+                            <span>Subtotal:</span>
+                            <span id="calcSubtotal">R$ 0,00</span>
+                        </div>
+                        <div class="receipt-calc-line savings-line" id="calcSavingsLine" style="display: none;">
+                            <span id="calcSavingsLabel">Desconto Combo:</span>
+                            <span id="calcSavingsValue">- R$ 0,00</span>
+                        </div>
+                        <div class="receipt-calc-line">
+                            <span>Modalidade:</span>
+                            <span id="calcShippingLabel">Envio Brasil</span>
+                        </div>
+                        <div class="receipt-total-line">
+                            <span>Total Geral:</span>
+                            <span class="receipt-total-amount" id="calcTotal">R$ 0,00</span>
+                        </div>
+                    </div>
+
+                    <!-- Botão Master WhatsApp -->
+                    <button type="button" class="btn-whatsapp-master" id="btnMasterWhatsApp" onclick="proceedToWhatsApp()" disabled>
+                        <span>📲 Finalizar Pedido no WhatsApp</span>
                     </button>
 
-                    <!-- Direct InfinitePay Link (Visible when exactly 1 simple item is chosen) -->
-                    <div id="directPayOption" style="display: none; margin-top: 8px;">
-                        <a href="#" id="btnInfinitePayDirect" target="_blank" class="btn-checkout-infinitepay">
-                            <span>💳 Ou Pagar Online Agora (PIX/Cartão)</span>
+                    <!-- Link Direto InfinitePay (exibido apenas para 1 item isolado) -->
+                    <div id="infinitePaySingleBlock" style="display: none; margin-top: 10px;">
+                        <a href="#" id="btnInfinitePayDirect" target="_blank" rel="noopener noreferrer" class="btn-infinitepay-alt">
+                            <span>💳 Pagar Agora com Cartão/PIX</span>
                         </a>
                     </div>
 
-                    <div class="secure-payment-notice">
-                        🔒 Compra 100% Segura • Atendimento Direto da Produtora
+                    <div class="receipt-guarantee-footer">
+                        <span>🔒 Compra 100% Segura • Atendimento Direto da Criadora</span>
                     </div>
                 </div>
             </aside>
+
         </div>
 
-        <!-- Mobile Floating Fixed Bar -->
-        <div class="mobile-floating-checkout-bar" id="mobileBar" style="display: none;">
-            <div class="mobile-total-box">
-                <span class="mobile-total-label">Total do Pedido</span>
-                <span class="mobile-total-val" id="mobileTotalVal">R$ 0,00</span>
+        <!-- Barra Flutuante Mobile -->
+        <div class="mobile-floating-bar-pro" id="mobileFloatingBar" style="display: none;">
+            <div class="mobile-bar-price-col">
+                <span class="mobile-bar-label">Total com Desconto:</span>
+                <span class="mobile-bar-total" id="mobileBarTotal">R$ 0,00</span>
             </div>
-            <button type="button" class="btn-checkout-whatsapp" onclick="proceedToWhatsApp()">
-                <span>Finalizar Pedido 📲</span>
+            <button type="button" class="btn-whatsapp-master" onclick="proceedToWhatsApp()">
+                <span>Concluir no WhatsApp 📲</span>
             </button>
         </div>
 
-        <!-- Trust & Guarantee Grid -->
-        <section style="margin-top: 48px; border-top: 1px solid var(--color-border); padding-top: 40px;">
-            <h2 style="text-align: center; color: var(--color-primary-dark); font-size: 22px; margin-bottom: 24px;">Por Que Escolher a Ecotenébrios?</h2>
+        <!-- Garantias e Provas de Qualidade -->
+        <section style="margin-top: 56px; border-top: 1px solid var(--color-border); padding-top: 48px;">
+            <h2 style="text-align: center; color: var(--color-primary-dark); font-size: 24px; font-weight: 800; margin-bottom: 28px;">
+                Por Que os Melhores Tutores Escolhem a Ecotenébrios?
+            </h2>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
-                <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: 12px; padding: 20px;">
-                    <h3 style="font-size: 16px; color: var(--color-primary-dark); margin-bottom: 8px;">🌱 Manejo Artesanal Rigoroso</h3>
-                    <p style="font-size: 14px; color: var(--color-text-muted); margin: 0;">Larvas criadas com higiene máxima, sem resíduos industriais e alimentadas com vegetais frescos orgânicos.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: 16px; padding: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.02);">
+                    <div style="font-size: 28px; margin-bottom: 10px;">🌱</div>
+                    <h3 style="font-size: 16px; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 6px;">Manejo 100% Artesanal</h3>
+                    <p style="font-size: 13.5px; color: var(--color-text-muted); margin: 0; line-height: 1.5;">Criatório higienizado diariamente em Tatuí/SP com alimentação nobre (farelo de trigo puro e vegetais frescos orgânicos com gut loading).</p>
                 </div>
-                <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: 12px; padding: 20px;">
-                    <h3 style="font-size: 16px; color: var(--color-primary-dark); margin-bottom: 8px;">📦 Envio Climatizado Seguro</h3>
-                    <p style="font-size: 14px; color: var(--color-text-muted); margin: 0;">Embalagens térmicas ventiladas preparadas para viagens rodoviárias ou aéreas sem superaquecimento.</p>
+
+                <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: 16px; padding: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.02);">
+                    <div style="font-size: 28px; margin-bottom: 10px;">📦</div>
+                    <h3 style="font-size: 16px; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 6px;">Embalagem Climatizada</h3>
+                    <p style="font-size: 13.5px; color: var(--color-text-muted); margin: 0; line-height: 1.5;">Caixas térmicas ventiladas com barreira anti-fuga desenvolvidas especialmente para suportar o trajeto dos Correios e transportadoras.</p>
                 </div>
-                <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: 12px; padding: 20px;">
-                    <h3 style="font-size: 16px; color: var(--color-primary-dark); margin-bottom: 8px;">🛡️ Garantia de Chegada Viva</h3>
-                    <p style="font-size: 14px; color: var(--color-text-muted); margin: 0;">Se houver qualquer problema ou atraso dos Correios/transportadora, garantimos a reposição imediata.</p>
+
+                <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: 16px; padding: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.02);">
+                    <div style="font-size: 28px; margin-bottom: 10px;">🛡️</div>
+                    <h3 style="font-size: 16px; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 6px;">Garantia de Chegada Viva</h3>
+                    <p style="font-size: 13.5px; color: var(--color-text-muted); margin: 0; line-height: 1.5;">Se ocorrer qualquer atraso extremo ou problema no transporte, garantimos o reenvio imediato do seu pedido sem burocracia.</p>
                 </div>
-                <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: 12px; padding: 20px;">
-                    <h3 style="font-size: 16px; color: var(--color-primary-dark); margin-bottom: 8px;">💬 Suporte Pós-Venda</h3>
-                    <p style="font-size: 14px; color: var(--color-text-muted); margin: 0;">A Raíssa tira todas as suas dúvidas sobre armazenamento, dosagem e manejo no WhatsApp.</p>
+
+                <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: 16px; padding: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.02);">
+                    <div style="font-size: 28px; margin-bottom: 10px;">👩‍🌾</div>
+                    <h3 style="font-size: 16px; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 6px;">Consultoria com a Raíssa</h3>
+                    <p style="font-size: 13.5px; color: var(--color-text-muted); margin: 0; line-height: 1.5;">Dúvidas sobre frequência de alimentação, conservação ou tamanho das larvas? Você tem suporte direto da produtora no WhatsApp.</p>
                 </div>
             </div>
         </section>
 
-        <div style="text-align: center; margin-top: 32px;">
-            <a href="../index.html" class="back-home">← Voltar para o site principal</a>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="../index.html" class="back-home" style="display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--color-primary-dark); text-decoration: none;">
+                ← Voltar para a Página Inicial da Ecotenébrios
+            </a>
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" style="margin-top: 40px;">
         <div class="footer-bottom" style="text-align: center;">
-            <p>&copy; 2026 Ecotenébrios. Produção artesanal em Tatuí/SP para todo o Brasil.</p>
+            <p>&copy; 2026 Ecotenébrios. Produção artesanal de alimento vivo em Tatuí/SP para todo o Brasil.</p>
         </div>
     </footer>
 
-    <!-- JavaScript Reativo do Carrinho -->
+    <!-- JavaScript Reativo e Dinâmico do Carrinho -->
     <script>
-        // Catálogo de Produtos e Preços Oficiais
-        const PRODUCTS = {
+        // Catálogo de Produtos e Links Oficiais InfinitePay
+        const CATALOG = {
             vivo: {
                 id: 'vivo',
                 name: 'Tenébrios Vivos (Kit Premium)',
-                shortName: 'Tenébrios Vivos',
+                shortName: 'Tenébrios Vivos (Kit)',
                 price: 49.90,
                 payLink: 'https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-bzfv7yiX4U-49,90'
             },
             desidratado: {
                 id: 'desidratado',
                 name: 'Tenébrios Desidratados (50g)',
-                shortName: 'Tenébrios Desidratados',
+                shortName: 'Tenébrios Desidratados (50g)',
                 price: 39.90,
                 payLink: 'https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-HgH3GDr86l-39,90'
             },
             minhoca: {
                 id: 'minhoca',
                 name: 'Minhocas Californianas (50un)',
-                shortName: 'Minhocas Californianas',
+                shortName: 'Minhocas Californianas (50un)',
                 price: 39.90,
                 payLink: 'https://link.infinitepay.io/raissa-sarles/VC1DLTEtSQ-RCdQTtivbb-39,90'
             }
         };
 
-        // Estado do Carrinho
+        // Estado Global da Aplicação
         const state = {
             quantities: {
                 vivo: 0,
@@ -399,17 +450,17 @@
             const updated = Math.max(0, current + delta);
             state.quantities[productId] = updated;
 
-            // Atualizar elemento do stepper
-            const qtyElement = document.getElementById(`qty-${productId}`);
-            if (qtyElement) qtyElement.innerText = updated;
+            // Atualizar Mostrador do Stepper
+            const countEl = document.getElementById(`qty-${productId}`);
+            if (countEl) countEl.innerText = updated;
 
-            // Atualizar classe do card
-            const card = document.getElementById(`card-tenebrio-${productId}`) || document.getElementById(`card-${productId}`);
+            // Atualizar Estado Visual do Card
+            const card = document.getElementById(`card-${productId}`);
             if (card) {
                 if (updated > 0) {
-                    card.classList.add('has-items');
+                    card.classList.add('is-selected');
                 } else {
-                    card.classList.remove('has-items');
+                    card.classList.remove('is-selected');
                 }
             }
 
@@ -420,59 +471,68 @@
         function setShipping(type) {
             state.shipping = type;
             
-            const cardBrasil = document.getElementById('ship-brasil');
-            const cardLocal = document.getElementById('ship-local');
+            const cardBrasil = document.getElementById('opt-ship-brasil');
+            const cardLocal = document.getElementById('opt-ship-local');
             const radioBrasil = document.getElementById('radio-brasil');
             const radioLocal = document.getElementById('radio-local');
 
             if (type === 'brasil') {
-                cardBrasil.classList.add('active');
-                cardLocal.classList.remove('active');
+                cardBrasil.classList.add('selected');
+                cardLocal.classList.remove('selected');
                 radioBrasil.checked = true;
                 radioLocal.checked = false;
-                document.getElementById('shippingSummaryText').innerText = 'Envio Brasil';
+                document.getElementById('calcShippingLabel').innerText = 'Envio Brasil';
             } else {
-                cardLocal.classList.add('active');
-                cardBrasil.classList.remove('active');
+                cardLocal.classList.add('selected');
+                cardBrasil.classList.remove('selected');
                 radioLocal.checked = true;
                 radioBrasil.checked = false;
-                document.getElementById('shippingSummaryText').innerText = 'Tatuí e Região';
+                document.getElementById('calcShippingLabel').innerText = 'Tatuí e Região';
             }
 
             updateCheckoutState();
         }
 
-        // Formatação em Moeda BRL
+        // Preenchimento Rápido com Pet Chips
+        function selectPetChip(petName) {
+            const petInput = document.getElementById('inputPet');
+            if (petInput) {
+                petInput.value = petName;
+                updateCheckoutState();
+                petInput.focus();
+            }
+        }
+
+        // Formatação em BRL
         function formatBRL(val) {
             return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         }
 
-        // Atualizar Toda a Interface Reativa
+        // Atualizar Estado Completo da Interface
         function updateCheckoutState() {
             let totalItems = 0;
             let subtotal = 0;
             const itemsList = [];
 
-            // Calcular itens
             for (const key in state.quantities) {
                 const qty = state.quantities[key];
                 if (qty > 0) {
                     totalItems += qty;
-                    const itemTotal = qty * PRODUCTS[key].price;
+                    const itemTotal = qty * CATALOG[key].price;
                     subtotal += itemTotal;
                     itemsList.push({
                         id: key,
-                        name: PRODUCTS[key].name,
-                        shortName: PRODUCTS[key].shortName,
+                        name: CATALOG[key].name,
+                        shortName: CATALOG[key].shortName,
                         qty: qty,
-                        price: PRODUCTS[key].price,
+                        unitPrice: CATALOG[key].price,
                         total: itemTotal,
-                        payLink: PRODUCTS[key].payLink
+                        payLink: CATALOG[key].payLink
                     });
                 }
             }
 
-            // Calcular Desconto Combo
+            // Descontos Combo
             let discountPercent = 0;
             if (totalItems === 2) {
                 discountPercent = 0.05; // 5%
@@ -483,89 +543,103 @@
             const discountAmount = subtotal * discountPercent;
             const finalTotal = subtotal - discountAmount;
 
-            // Atualizar Barra de Progresso de Desconto
-            const progressBar = document.getElementById('comboProgressBar');
-            const statusTitle = document.getElementById('comboStatusTitle');
-            const statusSubtitle = document.getElementById('comboStatusSubtitle');
+            // Atualização da Barra de Economia Progressiva
+            const trackerBar = document.getElementById('trackerProgressBar');
+            const trackerTitle = document.getElementById('trackerTitle');
+            const trackerMsg = document.getElementById('trackerMessage');
+            const badge1 = document.getElementById('tierBadge1');
+            const badge2 = document.getElementById('tierBadge2');
 
             if (totalItems === 0) {
-                progressBar.style.width = '0%';
-                statusTitle.innerText = '🎁 Desconto Combo: Adicione 2 ou mais itens para economizar!';
-                statusSubtitle.innerText = '2 itens = 5% OFF • 3 ou mais itens = 10% OFF no pedido inteiro';
+                trackerBar.style.width = '0%';
+                badge1.classList.remove('unlocked');
+                badge2.classList.remove('unlocked');
+                trackerTitle.innerHTML = '🎁 Desconto Combo Progressivo';
+                trackerMsg.innerText = 'Adicione 2 ou mais itens ao seu carrinho para ativar o desconto automático no pedido todo.';
             } else if (totalItems === 1) {
-                progressBar.style.width = '33%';
-                statusTitle.innerText = '⚡ Falta apenas 1 item para desbloquear 5% OFF!';
-                statusSubtitle.innerText = 'Adicione mais uma unidade ou outro produto para economizar';
+                trackerBar.style.width = '35%';
+                badge1.classList.remove('unlocked');
+                badge2.classList.remove('unlocked');
+                trackerTitle.innerHTML = '⚡ Falta apenas 1 item para 5% OFF!';
+                trackerMsg.innerText = 'Adicione mais uma unidade ou outro produto para economizar no pedido completo.';
             } else if (totalItems === 2) {
-                progressBar.style.width = '66%';
-                statusTitle.innerText = '🎉 Parabéns! Você ganhou 5% de Desconto!';
-                statusSubtitle.innerText = 'Adicione mais 1 item para subir para 10% OFF!';
+                trackerBar.style.width = '68%';
+                badge1.classList.add('unlocked');
+                badge2.classList.remove('unlocked');
+                trackerTitle.innerHTML = '🎉 Parabéns! 5% de Desconto Ativado!';
+                trackerMsg.innerText = 'Adicione mais 1 item para subir seu benefício para 10% OFF!';
             } else {
-                progressBar.style.width = '100%';
-                statusTitle.innerText = '🏆 Desconto Máximo Ativado: 10% OFF no Pedido Inteiro!';
-                statusSubtitle.innerText = `Você economizou ${formatBRL(discountAmount)} com o Combo Especial Ecotenébrios!`;
+                trackerBar.style.width = '100%';
+                badge1.classList.add('unlocked');
+                badge2.classList.add('unlocked');
+                trackerTitle.innerHTML = '🏆 Desconto Máximo: 10% OFF Ativado!';
+                trackerMsg.innerText = `Você está economizando ${formatBRL(discountAmount)} com o Combo Ecotenébrios!`;
             }
 
-            // Atualizar Resumo Lateral
-            document.getElementById('totalItemsBadge').innerText = `${totalItems} ${totalItems === 1 ? 'item' : 'itens'}`;
-            document.getElementById('subtotalVal').innerText = formatBRL(subtotal);
+            // Badge de Contagem no Recibo
+            document.getElementById('badgeTotalItems').innerText = `${totalItems} ${totalItems === 1 ? 'item' : 'itens'}`;
+            document.getElementById('calcSubtotal').innerText = formatBRL(subtotal);
 
-            // Desconto na UI
-            const discountRow = document.getElementById('discountRow');
+            // Linha de Desconto no Recibo
+            const savingsLine = document.getElementById('calcSavingsLine');
             if (discountPercent > 0) {
-                discountRow.style.display = 'flex';
-                document.getElementById('discountLabel').innerText = `Desconto Combo (${discountPercent * 100}%):`;
-                document.getElementById('discountVal').innerText = `- ${formatBRL(discountAmount)}`;
+                savingsLine.style.display = 'flex';
+                document.getElementById('calcSavingsLabel').innerText = `Desconto Combo (${discountPercent * 100}%):`;
+                document.getElementById('calcSavingsValue').innerText = `- ${formatBRL(discountAmount)}`;
             } else {
-                discountRow.style.display = 'none';
+                savingsLine.style.display = 'none';
             }
 
-            document.getElementById('totalVal').innerText = formatBRL(finalTotal);
+            document.getElementById('calcTotal').innerText = formatBRL(finalTotal);
 
-            // Mobile Bar
-            const mobileBar = document.getElementById('mobileBar');
-            const mobileTotalVal = document.getElementById('mobileTotalVal');
-            if (totalItems > 0) {
-                mobileBar.style.display = 'flex';
-                mobileTotalVal.innerText = formatBRL(finalTotal);
-            } else {
-                mobileBar.style.display = 'none';
-            }
-
-            // Renderizar Itens no Preview
-            const cartPreview = document.getElementById('cartPreview');
+            // Renderizar Lista de Itens no Recibo
+            const receiptContainer = document.getElementById('receiptItemsContainer');
             if (itemsList.length === 0) {
-                cartPreview.innerHTML = '<div class="cart-empty-message">Nenhum produto selecionado ainda.<br>Use os botões <strong>+</strong> acima para adicionar.</div>';
+                receiptContainer.innerHTML = `
+                    <div style="text-align: center; color: var(--color-text-muted); font-size: 13.5px; padding: 20px 0;">
+                        Nenhum item selecionado.<br>Clique nos botões <strong>+</strong> acima para adicionar.
+                    </div>
+                `;
             } else {
                 let html = '';
                 itemsList.forEach(item => {
                     html += `
-                        <div class="cart-item-row">
-                            <span class="item-name">${item.qty}x ${item.shortName}</span>
-                            <span class="item-price">${formatBRL(item.total)}</span>
+                        <div class="receipt-item-row">
+                            <span class="receipt-item-name">${item.qty}x ${item.shortName}</span>
+                            <span class="receipt-item-price">${formatBRL(item.total)}</span>
                         </div>
                     `;
                 });
-                cartPreview.innerHTML = html;
+                receiptContainer.innerHTML = html;
             }
 
-            // Habilitar ou Desabilitar Botão WhatsApp
-            const btnWhatsApp = document.getElementById('btnWhatsAppCheckout');
-            btnWhatsApp.disabled = totalItems === 0;
+            // Botão Master WhatsApp
+            const btnMaster = document.getElementById('btnMasterWhatsApp');
+            btnMaster.disabled = totalItems === 0;
 
-            // Opção de Link Direto InfinitePay (quando há exatamente 1 item de 1 produto e sem combo)
-            const directPayBox = document.getElementById('directPayOption');
-            const directPayBtn = document.getElementById('btnInfinitePayDirect');
+            // Opção de Link Direto InfinitePay
+            const payBlock = document.getElementById('infinitePaySingleBlock');
+            const payBtn = document.getElementById('btnInfinitePayDirect');
             if (totalItems === 1 && itemsList.length === 1 && state.shipping === 'brasil') {
-                directPayBox.style.display = 'block';
-                directPayBtn.href = itemsList[0].payLink;
-                directPayBtn.innerHTML = `<span>💳 Pagar ${itemsList[0].shortName} Online (${formatBRL(itemsList[0].price)})</span>`;
+                payBlock.style.display = 'block';
+                payBtn.href = itemsList[0].payLink;
+                payBtn.innerHTML = `<span>💳 Pagar ${itemsList[0].shortName} Online (${formatBRL(itemsList[0].unitPrice)})</span>`;
             } else {
-                directPayBox.style.display = 'none';
+                payBlock.style.display = 'none';
+            }
+
+            // Barra Flutuante Mobile
+            const mobBar = document.getElementById('mobileFloatingBar');
+            const mobTotal = document.getElementById('mobileBarTotal');
+            if (totalItems > 0) {
+                mobBar.style.display = 'flex';
+                mobTotal.innerText = formatBRL(finalTotal);
+            } else {
+                mobBar.style.display = 'none';
             }
         }
 
-        // Gerar Mensagem e Abrir WhatsApp
+        // Disparo para o WhatsApp com Pedido Formatado
         function proceedToWhatsApp() {
             let totalItems = 0;
             let subtotal = 0;
@@ -575,14 +649,14 @@
                 const qty = state.quantities[key];
                 if (qty > 0) {
                     totalItems += qty;
-                    const itemTotal = qty * PRODUCTS[key].price;
+                    const itemTotal = qty * CATALOG[key].price;
                     subtotal += itemTotal;
-                    items.push(`• ${qty}x ${PRODUCTS[key].name} (${formatBRL(itemTotal)})`);
+                    items.push(`• *${qty}x* ${CATALOG[key].name} (${formatBRL(itemTotal)})`);
                 }
             }
 
             if (totalItems === 0) {
-                alert('Por favor, adicione pelo menos um produto ao carrinho antes de finalizar.');
+                alert('Por favor, adicione pelo menos um item ao seu pedido.');
                 return;
             }
 
@@ -590,43 +664,42 @@
             if (totalItems === 2) discountPercent = 0.05;
             else if (totalItems >= 3) discountPercent = 0.10;
 
-            const discountVal = subtotal * discountPercent;
-            const total = subtotal - discountVal;
+            const discountAmount = subtotal * discountPercent;
+            const finalTotal = subtotal - discountAmount;
 
-            const clientName = document.getElementById('clientName').value.trim() || 'Não informado';
-            const clientCity = document.getElementById('clientCity').value.trim() || 'A combinar';
-            const clientPet = document.getElementById('clientPet').value.trim() || 'Não informado';
-            const shippingType = state.shipping === 'brasil' ? 'Envio Climatizado (Todo o Brasil)' : 'Entrega Expressa Regional (Tatuí e Região)';
+            const clientName = document.getElementById('inputName').value.trim() || 'Não informado';
+            const clientCity = document.getElementById('inputCity').value.trim() || 'A combinar';
+            const clientPet = document.getElementById('inputPet').value.trim() || 'Não informado';
+            const shippingStr = state.shipping === 'brasil' ? 'Envio Climatizado (Todo o Brasil)' : 'Entrega Regional Expressa (Tatuí e Região)';
 
-            // Montagem do texto elegante do WhatsApp
-            let text = `Olá Raíssa! Gostaria de fazer o seguinte pedido na Ecotenébrios:\n\n`;
-            text += `📦 *ITENS SELECIONADOS:*\n`;
-            text += items.join('\n') + `\n\n`;
+            // Mensagem Elegante e Formatada
+            let msg = `Olá Raíssa! Gostaria de fazer o seguinte pedido na Ecotenébrios:\n\n`;
+            msg += `📋 *ITENS DO PEDIDO:*\n`;
+            msg += items.join('\n') + `\n\n`;
 
-            text += `💰 *RESUMO DO VALOR:*\n`;
-            text += `• Subtotal: ${formatBRL(subtotal)}\n`;
+            msg += `💰 *VALORES:*\n`;
+            msg += `• Subtotal: ${formatBRL(subtotal)}\n`;
             if (discountPercent > 0) {
-                text += `• Desconto Combo (${discountPercent * 100}%): -${formatBRL(discountVal)}\n`;
+                msg += `• Desconto Combo (${discountPercent * 100}%): -${formatBRL(discountAmount)}\n`;
             }
-            text += `• *VALOR TOTAL: ${formatBRL(total)}*\n\n`;
+            msg += `• *TOTAL FINAL: ${formatBRL(finalTotal)}*\n\n`;
 
-            text += `🚚 *MODALIDADE DE ENTREGA:* ${shippingType}\n`;
-            text += `👤 *CLIENTE:* ${clientName}\n`;
-            text += `📍 *CIDADE/ESTADO:* ${clientCity}\n`;
-            text += `🐾 *PET:* ${clientPet}\n\n`;
-            text += `Como podemos combinar os dados de envio e o pagamento?`;
+            msg += `🚚 *MODALIDADE DE ENTREGA:* ${shippingStr}\n`;
+            msg += `👤 *NOME:* ${clientName}\n`;
+            msg += `📍 *CIDADE/ESTADO:* ${clientCity}\n`;
+            msg += `🐾 *ESPÉCIE DO PET:* ${clientPet}\n\n`;
+            msg += `Como podemos combinar o envio e a forma de pagamento?`;
 
-            const encoded = encodeURIComponent(text);
+            const encoded = encodeURIComponent(msg);
             const whatsappUrl = `https://wa.me/5515981098418?text=${encoded}`;
 
             window.open(whatsappUrl, '_blank');
         }
 
-        // Inicializar estado
+        // Inicializar Estado no Load
         document.addEventListener('DOMContentLoaded', () => {
             updateCheckoutState();
         });
     </script>
-
 </body>
 </html>
