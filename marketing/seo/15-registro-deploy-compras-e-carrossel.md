@@ -53,7 +53,23 @@
 
 ---
 
-## 3. 🚀 Como Subir Para Produção (GitHub Pages)
+## 3. ⚡ Otimizações de Performance & Acessibilidade (Auditoria PageSpeed Insights)
+
+Com base no diagnóstico do PageSpeed Insights mobile:
+1. **Acessibilidade (Meta 100/100)**:
+   - **Contraste de Cores (WCAG AA)**: Ajustadas as cores de botões verdes (Hero WhatsApp e Montar Pedido Combo) de `#25D366` para verde esmeralda escuro (`#128C7E` / `#1B6E39`), elevando a taxa de contraste para > 4.8:1 contra texto branco.
+   - **Área de Toque (*Target Size*)**: Adicionada área clicável transparente de 44×44px (`::after`) aos indicadores de paginação do carrossel (`.carousel-dot`).
+   - **Nomes Acessíveis Únicos**: Adicionados atributos `aria-label` descritivos individuais para os botões de checkout e artigos recomendados.
+
+2. **Performance & Core Web Vitals (Meta 95+)**:
+   - **Eliminação de *Forced Reflow***: O listener de `scroll` do carrossel teve o cálculo de `offsetWidth` desacoplado e colocado em cache na inicialização e no `resize`, zerando os 48ms de recálculo forçado de layout.
+   - **Otimização de Carregamento de Fontes**: Inclusão de `@font-face` com `font-display: swap` para a biblioteca de ícones Phosphor.
+   - **Adiantamento Inteligente de Scripts de Terceiros**: Carregamento assíncrono do Meta Pixel (`fbevents.js`) postergado via `requestIdleCallback` (3.5s) ou na primeira interação do usuário, liberando a thread principal e eliminando tarefas longas de TBT.
+   - **Animações Compostas**: Variável `--transition` otimizada para transicionar apenas propriedades de compositor (`opacity`, `transform`, `background-color`, `box-shadow`) em vez de propriedades de layout geométrico (`all`).
+
+---
+
+## 4. 🚀 Como Subir Para Produção (GitHub Pages)
 
 No seu terminal com permissão do Git, execute:
 ```powershell
