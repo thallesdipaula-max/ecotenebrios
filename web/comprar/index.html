@@ -55,7 +55,7 @@
               "position": 1,
               "name": "Tenébrios Vivos (Kit Premium)",
               "image": "https://ecotenebrios.com.br/assets/images/oferta-kit-premium.webp",
-              "description": "Larvas de tenébrio vivas criadas em substrato nobre com gut loading. Envio climatizado com frete grátis para todo o Brasil.",
+              "description": "Larvas de tenébrio vivas criadas em substrato nobre com gut loading. Envio climatizado com frete grátis para o Estado de SP e frete grátis para Sul e Sudeste acima de R$ 100.",
               "offers": {
                 "@type": "Offer",
                 "price": "49.90",
@@ -129,7 +129,7 @@
             <p>Selecione os alimentos ideais, combine diferentes itens para desbloquear descontos progressivos e receba com embalagem climatizada direto na sua porta.</p>
             
             <div class="shop-trust-pills">
-                <span class="shop-trust-pill">🚚 Frete Grátis no Kit Premium</span>
+                <span class="shop-trust-pill">🚚 Frete Grátis SP & Sul/Sudeste > R$ 100</span>
                 <span class="shop-trust-pill">📦 Embalagem Térmica Ventilada</span>
                 <span class="shop-trust-pill">🌱 100% Nutrição Orgânica</span>
                 <span class="shop-trust-pill">✨ Garantia de Chegada Viva</span>
@@ -178,12 +178,13 @@
                             <h2 class="product-card-title">Tenébrios Vivos (Kit Premium)</h2>
                             <div class="product-price-block">
                                 <span class="product-price-main">R$ 49,90</span>
-                                <span class="product-price-sub">/ kit com frete incluso</span>
+                                <span class="product-price-sub">/ frete grátis p/ SP</span>
                             </div>
                             <ul class="product-specs-list">
                                 <li>✨ <strong>Larvas ativas</strong> selecionadas com <em>Gut Loading</em></li>
                                 <li>📦 Embalagem térmica ventilada anti-fuga</li>
-                                <li>🚚 <strong>Frete Grátis</strong> para todo o Brasil</li>
+                                <li>🚚 <strong>Frete Grátis</strong> para todo o Estado de SP</li>
+                                <li>🎁 <strong>Sul e Sudeste:</strong> Frete Grátis acima de R$ 100</li>
                                 <li>🦎 Ideal para répteis, pássaros de canto e primatas</li>
                             </ul>
                         </div>
@@ -253,19 +254,35 @@
                     <h3 class="block-step-title">🚚 1. Região de Envio</h3>
                     
                     <div class="shipping-methods-container">
-                        <div class="shipping-option-card selected" id="opt-ship-brasil" onclick="setShipping('brasil')">
-                            <input type="radio" name="shippingOpt" id="radio-brasil" checked style="margin-top: 3px;">
+                        <div class="shipping-option-card selected" id="opt-ship-sp" onclick="setShipping('sp')">
+                            <input type="radio" name="shippingOpt" id="radio-sp" checked style="margin-top: 3px;">
                             <div>
-                                <h4>🇧🇷 Envio para Todo o Brasil</h4>
-                                <p>Transportadora expressa com embalagem térmica climatizada. <strong>Frete Grátis</strong> caso seu pedido inclua o Kit Premium.</p>
+                                <h4>📍 Estado de São Paulo (SP)</h4>
+                                <p><strong>Frete Grátis</strong> no Kit Premium com embalagem térmica climatizada.</p>
+                            </div>
+                        </div>
+
+                        <div class="shipping-option-card" id="opt-ship-sulsudeste" onclick="setShipping('sulsudeste')">
+                            <input type="radio" name="shippingOpt" id="radio-sulsudeste" style="margin-top: 3px;">
+                            <div>
+                                <h4>🚚 Sul e Sudeste (exceto SP)</h4>
+                                <p>RJ, MG, ES, PR, SC, RS: <strong>Frete Grátis acima de R$ 100,00</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="shipping-option-card" id="opt-ship-brasil" onclick="setShipping('brasil')">
+                            <input type="radio" name="shippingOpt" id="radio-brasil" style="margin-top: 3px;">
+                            <div>
+                                <h4>📦 Demais Estados do Brasil</h4>
+                                <p>Centro-Oeste, Norte e Nordeste. Envio climatizado com frete a combinar via WhatsApp.</p>
                             </div>
                         </div>
 
                         <div class="shipping-option-card" id="opt-ship-local" onclick="setShipping('local')">
                             <input type="radio" name="shippingOpt" id="radio-local" style="margin-top: 3px;">
                             <div>
-                                <h4>📍 Entrega Regional (Tatuí e Região)</h4>
-                                <p>Tatuí, Boituva, Cerquilho, Cesário Lange, Sorocaba e Itapetininga com entrega expressa combinada via WhatsApp.</p>
+                                <h4>🛵 Tatuí e Região (Entrega Expressa)</h4>
+                                <p>Tatuí, Boituva, Cerquilho, Cesário Lange, Sorocaba e Itapetininga combinada no WhatsApp.</p>
                             </div>
                         </div>
                     </div>
@@ -445,7 +462,7 @@
                 desidratado: 0,
                 minhoca: 0
             },
-            shipping: 'brasil' // 'brasil' ou 'local'
+            shipping: 'sp' // 'sp', 'sulsudeste', 'brasil' ou 'local'
         };
 
         // Atualizar Quantidades
@@ -475,24 +492,20 @@
         function setShipping(type) {
             state.shipping = type;
             
-            const cardBrasil = document.getElementById('opt-ship-brasil');
-            const cardLocal = document.getElementById('opt-ship-local');
-            const radioBrasil = document.getElementById('radio-brasil');
-            const radioLocal = document.getElementById('radio-local');
-
-            if (type === 'brasil') {
-                cardBrasil.classList.add('selected');
-                cardLocal.classList.remove('selected');
-                radioBrasil.checked = true;
-                radioLocal.checked = false;
-                document.getElementById('calcShippingLabel').innerText = 'Envio Brasil';
-            } else {
-                cardLocal.classList.add('selected');
-                cardBrasil.classList.remove('selected');
-                radioLocal.checked = true;
-                radioBrasil.checked = false;
-                document.getElementById('calcShippingLabel').innerText = 'Tatuí e Região';
-            }
+            const types = ['sp', 'sulsudeste', 'brasil', 'local'];
+            types.forEach(t => {
+                const card = document.getElementById(`opt-ship-${t}`);
+                const radio = document.getElementById(`radio-${t}`);
+                if (card) {
+                    if (t === type) {
+                        card.classList.add('selected');
+                        if (radio) radio.checked = true;
+                    } else {
+                        card.classList.remove('selected');
+                        if (radio) radio.checked = false;
+                    }
+                }
+            });
 
             updateCheckoutState();
         }
@@ -617,14 +630,30 @@
                 receiptContainer.innerHTML = html;
             }
 
+            // Linha de Modalidade de Envio no Recibo
+            const shipLabelEl = document.getElementById('calcShippingLabel');
+            if (shipLabelEl) {
+                if (state.shipping === 'sp') {
+                    shipLabelEl.innerText = 'Estado de SP (Frete Grátis no Kit)';
+                } else if (state.shipping === 'sulsudeste') {
+                    shipLabelEl.innerText = finalTotal >= 100 
+                        ? 'Sul/Sudeste (Frete Grátis 🎉)' 
+                        : 'Sul/Sudeste (Grátis > R$ 100)';
+                } else if (state.shipping === 'local') {
+                    shipLabelEl.innerText = 'Tatuí e Região';
+                } else {
+                    shipLabelEl.innerText = 'Demais Regiões (Frete a cotar)';
+                }
+            }
+
             // Botão Master WhatsApp
             const btnMaster = document.getElementById('btnMasterWhatsApp');
             btnMaster.disabled = totalItems === 0;
 
-            // Opção de Link Direto InfinitePay
+            // Opção de Link Direto InfinitePay (exclusivo para SP onde frete do Kit é 100% grátis)
             const payBlock = document.getElementById('infinitePaySingleBlock');
             const payBtn = document.getElementById('btnInfinitePayDirect');
-            if (totalItems === 1 && itemsList.length === 1 && state.shipping === 'brasil') {
+            if (totalItems === 1 && itemsList.length === 1 && state.shipping === 'sp') {
                 payBlock.style.display = 'block';
                 payBtn.href = itemsList[0].payLink;
                 payBtn.innerHTML = `<span>💳 Pagar ${itemsList[0].shortName} Online (${formatBRL(itemsList[0].unitPrice)})</span>`;
@@ -674,7 +703,19 @@
             const clientName = document.getElementById('inputName').value.trim() || 'Não informado';
             const clientCity = document.getElementById('inputCity').value.trim() || 'A combinar';
             const clientPet = document.getElementById('inputPet').value.trim() || 'Não informado';
-            const shippingStr = state.shipping === 'brasil' ? 'Envio Climatizado (Todo o Brasil)' : 'Entrega Regional Expressa (Tatuí e Região)';
+
+            let shippingStr = '';
+            if (state.shipping === 'sp') {
+                shippingStr = 'Estado de São Paulo (Frete Grátis no Kit Premium)';
+            } else if (state.shipping === 'sulsudeste') {
+                shippingStr = finalTotal >= 100 
+                    ? 'Sul e Sudeste (FRETE GRÁTIS ATIVADO - Pedido acima de R$ 100)' 
+                    : 'Sul e Sudeste (Pedido abaixo de R$ 100 - Frete a combinar)';
+            } else if (state.shipping === 'local') {
+                shippingStr = 'Entrega Regional Expressa (Tatuí e Região)';
+            } else {
+                shippingStr = 'Demais Regiões do Brasil (Envio Climatizado - Frete a cotar)';
+            }
 
             // Mensagem Elegante e Formatada
             let msg = `Olá Raíssa! Gostaria de fazer o seguinte pedido na Ecotenébrios:\n\n`;
